@@ -492,6 +492,27 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
       
+      .state("setup.chart", {
+          url: "/chart",
+          templateUrl: "views/setup/chart.html",
+          data: {pageTitle: 'Emplyees Chart'},
+          
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    '/assets/global/plugins/org-chart/jquery.orgchart.css',
+                    '/assets/global/plugins/org-chart/jquery.orgchart.js',
+                    'js/controllers/GeneralPageController.js',
+                    'js/orgChart.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
       .state("setup.role-access", {
           url: "/role-access",
           templateUrl: "views/setup/role-access.html",
