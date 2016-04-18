@@ -1,0 +1,26 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+  <ul class="page-breadcrumb">
+      <li>
+          <a href="#/dashboard.html">Partners</a>
+          <i class="fa fa-circle"></i>
+      </li>
+      <li>
+          <a href="#">Logistics Partners</a>
+      </li>
+      <li>
+          <a href="#">Logistics Details</a>
+      </li>
+  </ul>
+<div>
+<div class="clearfix"></div>
+<h3>LOGISTICS DETAILS</h3>
+<div class="clearfix"></div>
+
+<div class="row">
+	<div class="col-md-12">
+    <tabset>
+      <tab ng-repeat="tab in ltabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled"><div ng-include="tab.template"></div></tab>
+    </tabset>
+  </div>
+</div>

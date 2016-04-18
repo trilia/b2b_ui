@@ -1,0 +1,104 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="#/dashboard.html">Home</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <a href="#">Dashboard</a>
+        </li>
+    </ul>
+</div>
+<h3 class="page-title"> Dashboard </h3>
+<!-- END PAGE HEADER-->
+
+<div class="row">
+  <div class="col-md-6 col-sm-6">
+    <div class="portlet" style="padding:5px;">
+      <div class="col-md-12 col-sm-12 trilia-bg-color">
+        <strong>DEMAND FORCASTING BY CATEGORY</strong>
+      </div>
+      <div class="col-md-4 col-sm-4 trilia-bg-color">
+          3%<br>
+          Category 1
+       </div>
+       <div class="col-md-4 col-sm-4 trilia-bg-color">
+        -1%<br>
+          Category 2
+       </div>
+       <div class="col-md-4 col-sm-4 trilia-bg-color">
+        5%<br>
+        Category 3
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="row" style="padding:5px; margin-top: 10px;">
+  <div class="col-md-12 col-sm-12">
+    <!-- BEGIN PORTLET-->
+    <div class="portlet light bordered ">
+        <div class="portlet-title">
+            <div class="caption caption-md">
+                <span class="caption-subject bold uppercase">Order vs Stock</span>
+            </div>
+            <div class="actions">
+                
+            </div>
+        </div>
+        <div class="portlet-body">
+          <ng-high-line-chart></ng-high-line-chart>
+        </div>
+    </div>
+    <!-- END PORTLET-->
+  </div>
+</div>
+
+<div class="row" style="padding:5px; margin-top: 10px;">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <a href="#" class="dashboard-stat dashboard-stat-v2 lGrey">
+          <div class="visual"></div>
+          <div class="details">
+              <div class="number">
+                  <span data-value="89" data-counter="counterup">89</span>
+              </div>
+              <div class="desc"> High Priority Orders </div>
+          </div>
+      </a>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <a href="#" class="dashboard-stat dashboard-stat-v2 lGrey">
+          <div class="visual"></div>
+          <div class="details">
+              <div class="number">
+                  <span data-value="98" data-counter="counterup">98</span></div>
+              <div class="desc"> Delayed Orders </div>
+          </div>
+      </a>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <a href="#" class="dashboard-stat dashboard-stat-v2 lGrey">
+          <div class="visual"></div>
+          <div class="details">
+              <div class="number">
+                  <span data-value="239" data-counter="counterup">239</span>
+              </div>
+              <div class="desc"> Orders on Hold </div>
+          </div>
+      </a>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <a href="#" class="dashboard-stat dashboard-stat-v2 lGrey">
+          <div class="visual"></div>
+          <div class="details">
+              <div class="number">
+                  <span data-value="3168" data-counter="counterup">3168</span></div>
+              <div class="desc"> Orders in Progress </div>
+          </div>
+      </a>
+  </div>
+</div>
+<div class="clearfix"></div>

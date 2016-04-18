@@ -1,0 +1,22 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+  <ul class="page-breadcrumb">
+      <li>
+          <a href="#/dashboard.html">Setup</a>
+          <i class="fa fa-circle"></i>
+      </li>
+      <li>
+          <a href="#/dashboard.html">Business Setup</a>
+      </li>
+  </ul>
+</div>
+
+<h3 class="page-title"> Business Setup </h3>
+
+<div class="row">
+	<div class="col-md-12">
+    <tabset>
+      <tab ng-repeat="tab in btabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled"><div ng-include="tab.template"></div></tab>
+    </tabset>
+  </div>
+</div>
