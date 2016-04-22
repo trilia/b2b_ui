@@ -215,11 +215,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -313,7 +311,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/fullcalendar/fullcalendar.css',
+                      '/assets/global/plugins/fullcalendar/fullcalendar.min.css',
                       '/assets/global/plugins/fullcalendar/lib/moment.min.js',
                       '/assets/global/plugins/fullcalendar/fullcalendar.min.js',
                       'js/ngCalendar.js'
@@ -369,11 +367,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -577,11 +573,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -603,11 +597,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -653,11 +645,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -729,11 +719,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -784,11 +772,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
@@ -810,11 +796,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/select2/css/select2.css',                             
                       '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                       '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
                       '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
-                      '/assets/global/plugins/select2/js/select2.min.js',
                       '/assets/global/plugins/datatables/datatables.all.min.js',
                       '/assets/global/scripts/datatable.js',
                       'js/scripts/table-ajax.js',
