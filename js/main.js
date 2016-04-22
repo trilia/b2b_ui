@@ -140,7 +140,7 @@ TriliaApp.controller('FooterController', ['$scope', function($scope) {
 /* Setup Rounting For All Pages */
 TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/dashboard.html");  
+    $urlRouterProvider.otherwise("/dashboard");  
     
     $stateProvider
 
@@ -185,7 +185,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
       })
       
       .state('dashboard', {
-          url: "/dashboard.html",
+          url: "/dashboard",
           templateUrl: "views/dashboard.html",            
           data: {pageTitle: 'Dashboard Template'},
           controller: "DashboardController",
