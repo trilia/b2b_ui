@@ -6,9 +6,14 @@
         <div class="menu-toggler sidebar-toggler"></div>
     </div>
     <!-- END LOGO -->
-    <!-- BEGIN HEADER SEARCH BOX -->
-    <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
-    <form class="search-form hide" action="#" method="GET">
+    
+    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+    <!-- END RESPONSIVE MENU TOGGLER -->
+    <!-- BEGIN TOP NAVIGATION MENU -->
+    <div class="top-menu">
+        <!-- BEGIN HEADER SEARCH BOX -->
+    <form class="search-form" action="#" method="GET">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search..." name="query">
             <span class="input-group-btn">
@@ -19,11 +24,6 @@
         </div>
     </form>
     <!-- END HEADER SEARCH BOX -->
-    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
-    <!-- END RESPONSIVE MENU TOGGLER -->
-    <!-- BEGIN TOP NAVIGATION MENU -->
-    <div class="top-menu">
         <ul class="nav navbar-nav pull-right">
             <!-- BEGIN NOTIFICATION DROPDOWN -->
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
@@ -168,14 +168,7 @@
                 </ul>
             </li>
             <!-- END USER LOGIN DROPDOWN -->
-            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-            <li class="dropdown dropdown-quick-sidebar-toggler">
-                <a href="javascript:;" class="dropdown-toggle">
-                    <i class="icon-logout"></i>
-                </a>
-            </li>
-            <!-- END QUICK SIDEBAR TOGGLER -->
+            
         </ul>
     </div>
     <!-- END TOP NAVIGATION MENU -->

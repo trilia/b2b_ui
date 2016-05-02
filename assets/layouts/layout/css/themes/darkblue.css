@@ -98,7 +98,7 @@
     .page-header.navbar .top-menu .navbar-nav > li.dropdown-notification.dropdown-dark .dropdown-menu .dropdown-menu-list > li > a:hover .time {
       background: #2b3643; }
   .page-header.navbar .search-form {
-    background: #232c37; }
+    background: #002246; margin-top: 10px; }
     .page-header.navbar .search-form:hover {
       background: #3f4f62; }
     .page-header.navbar .search-form .input-group .form-control {

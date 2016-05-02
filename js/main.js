@@ -92,6 +92,7 @@ TriliaApp.controller('AppController', ['$scope', '$rootScope', function($scope, 
         //App.initComponents(); // init core components
         //Layout.init(); //  Init entire layout(header, footer, sidebar, etc) on page load if the partials included in server side instead of loading with ng-include directive 
     });
+    $scope.date = new Date();
 }]);
 
 /***
@@ -324,7 +325,24 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
       .state("orders.warehouse_mgmt", {
           url: "/warehouse_mgmt",
           templateUrl: "views/orders/warehouse_mgmt.html",
-          data: {pageTitle: 'Order Management'}      
+          data: {pageTitle: 'Order Management'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
       })
       
       .state("orders.packaging", {
@@ -336,7 +354,24 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
       .state("orders.shipping", {
           url: "/shipping",
           templateUrl: "views/orders/shipping.html",
-          data: {pageTitle: 'Shipping'}      
+          data: {pageTitle: 'Shipping'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
       })
       
       .state("partners", {

@@ -2198,8 +2198,9 @@ Page Loading
 }
 
 
-.dashboard-stat.lGrey {
+.lGrey {
     background-color: #F2F5F7;
+    padding: 12px 20px 15px;
 }
 
 .number span {
@@ -2222,4 +2223,18 @@ Page Loading
   background-color: #F4F7F8;
   border-color: #ACA8A3;
   color: #262726;
+}
+
+.page-content-wrapper .page-footer {
+  border-top: 1px solid #D0CDC7;
+  margin-left: 235px;
+  margin-top: 0;
+  padding: 0px 20px 10px;
+  height: 70px;
+  background-color: #FFFFFF;
+  
+}
+
+.page-content-wrapper  .page-footer-inner {
+  
 }
