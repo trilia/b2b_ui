@@ -55,30 +55,12 @@
         </div>
         <!-- END PAGE SPINNER -->
         <!-- BEGIN HEADER -->
-        <div data-ng-include="'tpl/header.html'" data-ng-controller="HeaderController" class="page-header navbar navbar-fixed-top"> </div>
+        <div data-ng-include="pageHeader" data-ng-controller="HeaderController" class="page-header navbar navbar-fixed-top"> </div>
         <!-- END HEADER -->
         <div class="clearfix"> </div>
         <!-- BEGIN CONTAINER -->
-        <div class="page-container">
-            <!-- BEGIN SIDEBAR -->
-            <div data-ng-include="'tpl/sidebar.html'" data-ng-controller="SidebarController" class="page-sidebar-wrapper"> </div>
-            <!-- END SIDEBAR -->
-            <!-- BEGIN CONTENT -->
-            <div class="page-content-wrapper">
-                <div class="page-content">
-                    <!-- BEGIN ACTUAL CONTENT -->
-                    <div ui-view class="fade-in-up"> </div>
-                    
-                    <!-- END ACTUAL CONTENT -->
-                    
-                </div>
-                <div data-ng-include="'tpl/footer.html'" data-ng-controller="FooterController" class="page-footer"> </div>
-            </div>
-            <!-- END CONTENT -->
-            <!-- BEGIN QUICK SIDEBAR -->
-            <a href="javascript:;" class="page-quick-sidebar-toggler">
-                <i class="icon-login"></i>
-            </a>
+        <div class="page-container" data-ng-include="pageMiddleContent">
+            
         </div>
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->

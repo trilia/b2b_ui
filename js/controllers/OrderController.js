@@ -1,4 +1,5 @@
 angular.module('TriliaApp').controller('OrderController', function($rootScope, $scope, $http, $timeout) {
+    $scope.setAuth(true);
     $scope.$on('$viewContentLoaded', function() {   
         //App.initAjax(); // initialize core components
         //Layout.setSidebarMenuActiveLink('set', $('#sidebar_menu_link_profile')); // set profile link active in sidebar menu 

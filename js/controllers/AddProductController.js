@@ -1,4 +1,5 @@
 angular.module('TriliaApp').controller('AddProductController', function($rootScope, $scope, $http, $timeout) {
+    $scope.setAuth(true);
     $scope.$on('$viewContentLoaded', function() {
     });
 

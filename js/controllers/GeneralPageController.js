@@ -1,5 +1,6 @@
 /* Setup general page controller */
 angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '$scope', 'settings', function($rootScope, $scope, settings) {
+    $scope.setAuth(true);
     $scope.frmDetails = false;
     $scope.$on('$viewContentLoaded', function() {   
     	// initialize core components

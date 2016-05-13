@@ -1,4 +1,5 @@
 angular.module('TriliaApp').controller('ListingController', function($rootScope, $scope, $http, $timeout) {
+    $scope.setAuth(true);
     $scope.$on('$viewContentLoaded', function() {   
         // initialize core components
         //App.initAjax();

@@ -93,6 +93,23 @@ TriliaApp.controller('AppController', ['$scope', '$rootScope', function($scope, 
         //Layout.init(); //  Init entire layout(header, footer, sidebar, etc) on page load if the partials included in server side instead of loading with ng-include directive 
     });
     $scope.date = new Date();
+    $scope.isAuthenticate = true;
+    $scope.pageHeader = $scope.isAuthenticate ? 'tpl/header.html' : 'tpl/header-main.html';
+    $scope.pageMiddleContent = $scope.isAuthenticate ? 'tpl/middle-content.html' : 'tpl/middle-content-main.html';
+    $scope.$watch('isAuthenticate', function(newValue, oldValue) {
+      if(newValue == false) {
+        $scope.pageHeader = 'tpl/header-main.html';
+        $scope.pageMiddleContent = 'tpl/middle-content-main.html';
+      } else {
+        $scope.pageHeader = 'tpl/header.html';
+        $scope.pageMiddleContent = 'tpl/middle-content.html';
+      }
+    });
+    $scope.setAuth = function(option) {
+      console.log($scope.isAuthenticate);
+      $scope.isAuthenticate = option;
+      console.log($scope.isAuthenticate);
+    }
 }]);
 
 /***
@@ -144,7 +161,23 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
     $urlRouterProvider.otherwise("/dashboard");  
     
     $stateProvider
-
+      .state('login', {
+          url: "/login",
+          templateUrl: "views/login.html",
+          data: {pageTitle: 'Login'},
+          controller: "LoginController",
+          resolve: {
+              deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                  return $ocLazyLoad.load([{
+                      name: 'TriliaApp',
+                      files: [
+                          'js/controllers/LoginController.js',
+                      ]
+                  }]);
+              }]
+          }
+      })
+      
       .state('home', {
           url: "/home",
           templateUrl: "views/home.html",
@@ -196,7 +229,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                       name: 'TriliaApp',
                       insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
                       files: [
-                          '/assets/global/plugins/highcharts/js/highcharts.src.js',
+                          '/assets/global/plugins/highstock/js/highstock.js',
                           'js/ngHighLineChart.js',
                           'js/controllers/DashboardController.js',
                       ] 

@@ -2238,3 +2238,25 @@ Page Loading
 .page-content-wrapper  .page-footer-inner {
   
 }
+
+.user-content {
+    background-color: #eceef1;
+    border-radius: 7px;
+    margin: 40px auto 10px;
+    overflow: hidden;
+    padding: 10px 30px 30px;
+    position: relative;
+    width: 400px;
+}
+
+.page-outside {
+  background-image: url("/assets/images/bg.png");
+  height: 100%;
+  width: 100%;
+}
+
+.page-content-wrapper .user-page-content {
+  margin-left: 0px;
+  margin-top: 0;
+  padding: 25px 20px 10px;
+}
