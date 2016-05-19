@@ -194,7 +194,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                           '/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
                           '/assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css',
                           '/assets/global/plugins/typeahead/typeahead.css',
-
+                          '/assets/global/plugins/moment/moment.js',
                           '/assets/global/plugins/fuelux/js/spinner.min.js',
                           '/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
                           '/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js',
@@ -205,6 +205,9 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                           '/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js',
                           '/assets/global/plugins/typeahead/handlebars.min.js',
                           '/assets/global/plugins/typeahead/typeahead.bundle.min.js',
+                          '/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js',
+                          '/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.css',
+                          '/assets/global/plugins/angular-daterangepicker/js/angular-daterangepicker.js',
                           '/assets/pages/scripts/components-form-tools-2.min.js',
                           'js/ngHighLineChart.js'
                       ] 
@@ -229,7 +232,11 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                       name: 'TriliaApp',
                       insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
                       files: [
+                          '/assets/global/plugins/moment/moment.js',
                           '/assets/global/plugins/highstock/js/highstock.js',
+                          '/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js',
+                          '/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.css',
+                          '/assets/global/plugins/angular-daterangepicker/js/angular-daterangepicker.js',
                           'js/ngHighLineChart.js',
                           'js/controllers/DashboardController.js',
                       ] 

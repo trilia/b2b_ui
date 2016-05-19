@@ -1477,22 +1477,22 @@ Page content
       margin-left: 235px;
       margin-top: 0px;
       min-height: 600px;
-      padding: 25px 20px 10px 20px; }
+      padding: 50px; }
       .page-content-wrapper .page-content.no-min-height {
         min-height: auto; }
       .page-sidebar-fixed.page-sidebar-hover-on .page-content-wrapper .page-content {
-        margin-left: 45px; }
+        margin-left: 42px; }
       .page-sidebar-reversed .page-content-wrapper .page-content {
         margin-left: 0 !important;
         margin-right: 235px !important; }
       .page-sidebar-reversed.page-sidebar-fixed.page-sidebar-hover-on .page-content-wrapper .page-content {
         margin-left: 0;
-        margin-right: 45px; }
+        margin-right: 42px; }
       .page-sidebar-reversed.page-sidebar-closed .page-content-wrapper .page-content {
         margin-left: 0 !important;
-        margin-right: 45px !important; }
+        margin-right: 42px !important; }
       .page-sidebar-closed .page-content-wrapper .page-content {
-        margin-left: 45px !important; }
+        margin-left: 42px !important; }
       .page-sidebar-closed.page-sidebar-hide .page-content-wrapper .page-content {
         margin-left: 0 !important; }
       .page-sidebar-closed.page-sidebar-reversed.page-sidebar-hide .page-content-wrapper .page-content {
@@ -2259,4 +2259,62 @@ Page Loading
   margin-left: 0px;
   margin-top: 0;
   padding: 25px 20px 10px;
+}
+
+.portlet-header {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 30px;
+}
+
+.sans-font {
+  font-size: 28px;
+  color: #00a6de;
+}
+
+.sans-font-14 {
+  font-size: 14px!important;
+  color: #00a6de!important;
+}
+
+.sans-font-14-222222 {
+  font-size: 14px!important;
+  color: #00a6de!important;
+}
+
+.sans-font-semi-bold{
+  font-size: 24px;
+  font-weight: 600;
+  color: #081a47;
+}
+
+.page-sidebar-closed .page-content-wrapper .page-footer {
+    margin-left: 42px !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  font-size: 14px!important;
+  color: #00a6de!important;
+}
+
+.nav-pills > li > a, .nav-tabs > li > a {
+  font-size: 14px!important;
+  color: #222222!important;
+}
+
+.productImages ul li {
+  width:110px;
+  float: left;
+  list-style: none;
+}
+
+.productImages ul {
+  padding: 0px;
 }

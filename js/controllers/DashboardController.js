@@ -1,10 +1,7 @@
 angular.module('TriliaApp').controller('DashboardController', function($rootScope, $scope, $http, $timeout) {
     $scope.setAuth(true);
-    $scope.$on('$viewContentLoaded', function() {   
-        // initialize core components
-        App.initAjax();
-    });
-
+    
+    $scope.datePicker = {date: {startDate: null, endDate: null}};
     // set sidebar closed and body solid layout mode
     $rootScope.settings.layout.pageContentWhite = true;
     $rootScope.settings.layout.pageBodySolid = false;

@@ -120,7 +120,7 @@ var Layout = function () {
 
         if (mode === 'click') {
             if (App.getViewPort().width < resBreakpointMd && $('.page-sidebar').hasClass("in")) { // close the menu on mobile view while laoding a page 
-                $('.page-header .responsive-toggler').click();
+                //$('.page-header .responsive-toggler').click();
             }
         }
     };

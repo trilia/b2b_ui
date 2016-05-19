@@ -14,23 +14,24 @@
 <!-- END PAGE HEADER-->
 
 <div class="row">
-  <div class="col-md-6 col-sm-6">
-    <div class="portlet" style="padding:5px;">
-      <div class="col-md-12 col-sm-12 trilia-bg-color">
+  <div class="col-md-6 col-sm-6 margin-bottom-30">
+    <div class="portlet">
+      <div class="col-md-12 col-sm-12 trilia-bg-color portlet-header">
         <strong>DEMAND FORCASTING BY CATEGORY</strong>
       </div>
-      <div class="col-md-4 col-sm-4 trilia-bg-color">
-          3%<br>
-          Category 1
-       </div>
-       <div class="col-md-4 col-sm-4 trilia-bg-color">
-        -1%<br>
-          Category 2
-       </div>
-       <div class="col-md-4 col-sm-4 trilia-bg-color">
-        5%<br>
+      <div class="clearfix"></div>
+      <div class="col-md-4 col-sm-4 trilia-bg-color padding-bottom-10">
+        <span class="sans-font">3%</span><br>
+        Category 1
+      </div>
+      <div class="col-md-4 col-sm-4 trilia-bg-color padding-bottom-10">
+        <span class="sans-font">-5%</span><br>
+        Category 2
+      </div>
+      <div class="col-md-4 col-sm-4 trilia-bg-color padding-bottom-10">
+        <span class="sans-font">5%</span><br>
         Category 3
-       </div>
+      </div>
     </div>
   </div>
 </div>
@@ -42,28 +43,11 @@
     <!-- BEGIN PORTLET-->
     <div class="portlet light bordered ">
         <div class="portlet-title">
-            <div class="caption caption-md col-md-8">
+            <div class="caption caption-md col-md-9">
                 <span class="caption-subject bold uppercase">Order vs Stock</span>
             </div>
-            <div class="col-md-2">
-                <p class="input-group">
-                <input class="form-control" type="text" datepicker-popup="{{format}}" ng-model="dt1" is-open="opened"  datepicker-options="dateOptions" ng-required="true"                                      close-text="Close" />
-                <span class="input-group-btn">
-                  <button type="button" class="btn btn-default" ng-click="open($event)">
-                    <i class="glyphicon glyphicon-calendar"></i>
-                  </button>
-                </span>
-                </p>
-            </div>
-            <div class="col-md-2">
-                <p class="input-group">
-                <input class="form-control" type="text" datepicker-popup="{{format}}" ng-model="dt" is-open="opened"  datepicker-options="dateOptions" ng-required="true"                                      close-text="Close" />
-                <span class="input-group-btn">
-                  <button type="button" class="btn btn-default" ng-click="open($event)">
-                    <i class="glyphicon glyphicon-calendar"></i>
-                  </button>
-                </span>
-                </p>
+            <div class="col-md-3">
+              <input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date" />
             </div>
         </div>
         <div class="portlet-body">
