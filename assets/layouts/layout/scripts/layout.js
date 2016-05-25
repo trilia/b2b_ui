@@ -374,7 +374,7 @@ var Layout = function () {
 
     // Handles sidebar toggler to close/hide the sidebar.
     var handleFixedSidebarHoverEffect = function () {
-        var body = $('body');
+        /* var body = $('body');
         if (body.hasClass('page-sidebar-fixed')) {
             $('.page-sidebar').on('mouseenter', function () {
                 if (body.hasClass('page-sidebar-closed')) {
@@ -385,7 +385,7 @@ var Layout = function () {
                     $(this).find('.page-sidebar-menu').addClass('page-sidebar-menu-closed');
                 }
             });
-        }
+        } */
     };
 
     // Hanles sidebar toggler
@@ -412,7 +412,7 @@ var Layout = function () {
                 body.addClass("page-sidebar-closed");
                 sidebarMenu.addClass("page-sidebar-menu-closed");
                 if (body.hasClass("page-sidebar-fixed")) {
-                    sidebarMenu.trigger("mouseleave");
+                    //sidebarMenu.trigger("mouseleave");
                 }
                 if ($.cookie) {
                     $.cookie('sidebar_closed', '1');

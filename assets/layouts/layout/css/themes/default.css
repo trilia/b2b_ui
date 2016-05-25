@@ -303,11 +303,7 @@
     .page-sidebar .page-sidebar-menu > li.active.open > a {
       border-top-color: transparent;
       color: #00A6DE; }
-      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a:hover,
-      .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a:hover,
-      .page-sidebar .page-sidebar-menu > li.active > a:hover,
-      .page-sidebar .page-sidebar-menu > li.active.open > a:hover {
-       /* background: #36c6d3;*/ }
+      
       .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > i,
       .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > i,
       .page-sidebar .page-sidebar-menu > li.active > a > i,
