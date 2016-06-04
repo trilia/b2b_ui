@@ -158,13 +158,30 @@ TriliaApp.controller('FooterController', ['$scope', function($scope) {
 /* Setup Rounting For All Pages */
 TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/dashboard");  
+    $urlRouterProvider.otherwise("/home");  
     
     $stateProvider
       .state('login', {
           url: "/login",
           templateUrl: "views/login.html",
           data: {pageTitle: 'Login'},
+          controller: "LoginController",
+          resolve: {
+              deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                  return $ocLazyLoad.load([{
+                      name: 'TriliaApp',
+                      files: [
+                          'js/controllers/LoginController.js',
+                      ]
+                  }]);
+              }]
+          }
+      })
+			
+			.state('price_tab', {
+          url: "/price_tab",
+          templateUrl: "views/price_tab.html",
+          data: {pageTitle: 'price_tab'},
           controller: "LoginController",
           resolve: {
               deps: ['$ocLazyLoad', function($ocLazyLoad) {
@@ -194,7 +211,6 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                           '/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
                           '/assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css',
                           '/assets/global/plugins/typeahead/typeahead.css',
-                          '/assets/global/plugins/moment/moment.js',
                           '/assets/global/plugins/fuelux/js/spinner.min.js',
                           '/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
                           '/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js',
@@ -269,10 +285,121 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
       
+      .state("catalog-setup", {
+          url: "/catalog-setup",
+          templateUrl: "views/products/catalog-setup.html",
+          data: {pageTitle: 'Catalog Setup'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("templates", {
+          url: "/templates",
+          templateUrl: "views/products/templates.html",
+          data: {pageTitle: 'Templates'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("categories", {
+          url: "/categories",
+          templateUrl: "views/products/categories.html",
+          data: {pageTitle: 'Categories'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+
+			
+			
+			.state("add-collection", {
+          url: "/add-collection",
+          templateUrl: "views/products/add_collection.html",
+          data: {pageTitle: 'Collection'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })			
+					
+      .state("clothes", {
+          url: "/clothes",
+          templateUrl: "views/products/clothes.html",
+          data: {pageTitle: 'Clothes'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+
       .state("add-product", {
           url: "/add-product",
           templateUrl: "views/products/add_product.html",
           data: {pageTitle: 'Add Product'},
+          controller: "AddProductController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/AddProductController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("collections", {
+          url: "/collections",
+          templateUrl: "views/products/collections.html",
+          data: {pageTitle: 'Collections'},
           controller: "AddProductController",
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
@@ -323,10 +450,48 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
 
+      .state("orders.dashboard1", {
+          url: "/dashboard1",
+          templateUrl: "views/orders/dashboard1.html",
+          data: {pageTitle: 'Order Processing'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/highcharts/js/highcharts.src.js',
+                      'js/ngHighLineChart.js',
+                      'js/ngHighDonutChart.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
       .state("orders.processing", {
           url: "/processing",
           templateUrl: "views/orders/processing.html",
           data: {pageTitle: 'Order Processing'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/highcharts/js/highcharts.src.js',
+                      'js/ngHighLineChart.js',
+                      'js/ngHighDonutChart.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("orders.released-orders", {
+          url: "/released-orders",
+          templateUrl: "views/orders/released-orders.html",
+          data: {pageTitle: 'Released Orders'},
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
               return $ocLazyLoad.load({
@@ -413,10 +578,120 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
             }]
           }
       })
+			
+			.state("orders.data-entry", {
+          url: "/data-entry",
+          templateUrl: "views/orders/data_entry.html",
+          data: {pageTitle: 'data-entry'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("orders.return", {
+          url: "/return",
+          templateUrl: "views/orders/return.html",
+          data: {pageTitle: 'return'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("orders.return-status", {
+          url: "/return-status",
+          templateUrl: "views/orders/return_status.html",
+          data: {pageTitle: 'return-status'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("orders.return-request", {
+          url: "/return-request",
+          templateUrl: "views/orders/return_request.html",
+          data: {pageTitle: 'return-request'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/ProductController.js'
+                  ]
+              });
+            }]
+          }
+      })
       
       .state("partners", {
           url: "/partners",
           templateUrl: "views/partners/main.html",
+          data: {pageTitle: 'Partner Management'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("partners.dashboard", {
+          url: "/dashboard",
+          templateUrl: "views/partners/dashboard.html",
           data: {pageTitle: 'Partner Management'},
           controller: "GeneralPageController",
           resolve: {
@@ -474,6 +749,44 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
       
+      .state("partners.cod-payments", {
+          url: "/cod-payments",
+          templateUrl: "views/partners/cod-payments.html",
+          data: {pageTitle: 'Cod Payments'},
+          
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    'js/ngGoogleMap.js',
+                    'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("partners.logistic-partners", {
+          url: "/logistic-partners",
+          templateUrl: "views/partners/logistic-partners.html",
+          data: {pageTitle: 'Logistic Partners'},
+          
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    'js/ngGoogleMap.js',
+                    'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
       .state("setup", {
           url: "/setup",
           templateUrl: "views/setup/main.html",
@@ -508,6 +821,44 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
             }]
           }
       })
+      
+      .state("setup.employee", {
+          url: "/employee",
+          templateUrl: "views/setup/employees.html",
+          data: {pageTitle: 'Employee Setup'},
+          controller: "EmployeeController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/EmployeeController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("setup.employee-big", {
+          url: "/employee-big",
+          templateUrl: "views/setup/employees_big.html",
+          data: {pageTitle: 'Employee Setup'},
+          controller: "EmployeeController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/EmployeeController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      
 
       .state("setup.employees-add", {
           url: "/employees-add",
@@ -567,17 +918,15 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           url: "/chart",
           templateUrl: "views/setup/chart.html",
           data: {pageTitle: 'Emplyees Chart'},
-          
+          controller: "GeneralPageController",
           resolve: {
-            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+            deps: ['$ocLazyLoad', '$compile', function($ocLazyLoad, $compile) {
               return $ocLazyLoad.load({
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                    '/assets/global/plugins/org-chart/jquery.orgchart.css',
-                    '/assets/global/plugins/org-chart/jquery.orgchart.js',
-                    'js/controllers/GeneralPageController.js',
-                    'js/orgChart.js'
+                    'js/controllers/GeneralPageController.js'
+                    
                   ]
               });
             }]
@@ -588,6 +937,60 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           url: "/role-access",
           templateUrl: "views/setup/role-access.html",
           data: {pageTitle: 'Role Access Settings'},
+          
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("setup.advanced-settings", {
+          url: "/advanced-settings",
+          templateUrl: "views/setup/advanced-settings.html",
+          data: {pageTitle: 'Advance Settings'},
+          
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("setup.add-roles", {
+          url: "/add-roles",
+          templateUrl: "views/setup/add_roles.html",
+          data: {pageTitle: 'Advance Settings'},
+          controller: 'GeneralPageController',
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                    'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("setup.inventory-setup", {
+          url: "/inventory-setup",
+          templateUrl: "views/setup/inventory-setup.html",
+          data: {pageTitle: 'Inventory Setup'},
           
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
@@ -733,6 +1136,128 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
       
+
+			
+					
+			.state("finance.cost-center", {
+          url: "/cost-center",
+          templateUrl: "views/finance/cost-center.html",
+          data: {pageTitle: 'Finance Dashboard'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/CustomerDetailsController.js',
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+      .state("finance.journal-entry", {
+          url: "/journal-entry",
+          templateUrl: "views/finance/journal-entry.html",
+          data: {pageTitle: 'Finance Journal Entry'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/CustomerDetailsController.js',
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("finance.setup", {
+          url: "/setup",
+          templateUrl: "views/finance/setup.html",
+          data: {pageTitle: 'Finance Dashboard'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/CustomerDetailsController.js',
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("finance.bill-tracker", {
+          url: "/bill-tracker",
+          templateUrl: "views/finance/bill-tracker.html",
+          data: {pageTitle: 'Finance Bill Tracker'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
+                      'js/controllers/CustomerDetailsController.js',
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+      
+      .state("finance.chart-of-accounts", {
+          url: "/chart-of-accounts",
+          templateUrl: "views/finance/chart-of-accounts.html",
+          data: {pageTitle: 'Finance Chart Of Accounts'},
+          controller: "GeneralPageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/GeneralPageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
       .state("marketing-sales", {
           url: "/marketing-sales",
           templateUrl: "views/marketing_sales/main.html",
@@ -819,6 +1344,20 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           data: {pageTitle: 'Marketing Details1'}
       })
       
+      .state("marketing-sales.sales-channel", {
+          url: "/sales-channel",
+          templateUrl: "views/marketing_sales/sales-channel.html",
+          data: {pageTitle: 'Marketing Sales Channel'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before'
+              });
+            }]
+          }
+      })
+      
       .state("customer-care", {
           url: "/customer-care",
           templateUrl: "views/customer-care/main.html",
@@ -830,6 +1369,29 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
+                      'js/controllers/CustomerCareController.js'
+                  ]
+              });
+            }]
+          }
+      })
+			
+			.state("customer-care.dashboard", {
+          url: "/dashboard",
+          templateUrl: "views/customer-care/dashboard.html",
+          data: {pageTitle: 'Customer Care'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
+                      '/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css',
+                      '/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
+                      '/assets/global/plugins/datatables/datatables.all.min.js',
+                      '/assets/global/scripts/datatable.js',
+                      'js/scripts/table-ajax.js',
                       'js/controllers/CustomerCareController.js'
                   ]
               });
@@ -912,12 +1474,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',  
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      '/assets/global/plugins/tree-view/Treant.css',
-                      '/assets/global/plugins/tree-view/basic-example.css',
-                      '/assets/global/plugins/tree-view/raphael.js',
-                      '/assets/global/plugins/tree-view/Treant.js',
-                      '/assets/global/plugins/tree-view/basic-example.js',
-                      'js/hierarchy.js'
+                      'js/controllers/CustomerCareController.js'
                   ]
               });
             }]
@@ -952,6 +1509,40 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           url: "/defects",
           templateUrl: "views/access/defects.html",
           data: {pageTitle: 'Defects'}
+      })
+      
+      .state("access.purchase-order", {
+          url: "/purchase-order",
+          templateUrl: "views/access/purchase-order.html",
+          data: {pageTitle: 'Purchase Order'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/CustomerCareController.js'
+                  ]
+              });
+            }]
+          }
+      })
+      
+      .state("access.data-entry", {
+          url: "/data-entry",
+          templateUrl: "views/access/data-entry.html",
+          data: {pageTitle: 'Data Entry'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/CustomerCareController.js'
+                  ]
+              });
+            }]
+          }
       })
 }]);
 

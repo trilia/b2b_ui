@@ -1,5 +1,5 @@
 /* Setup general page controller */
-angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '$scope', 'settings', function($rootScope, $scope, settings) {
+angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '$scope', 'settings', '$ocLazyLoad', '$compile', '$sce', function($rootScope, $scope, settings, $ocLazyLoad, $compile, $sce) {
     $scope.setAuth(true);
     $scope.frmDetails = false;
     $scope.$on('$viewContentLoaded', function() {   
@@ -39,7 +39,7 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
     }];
     
     $scope.btabs = [{
-        title: 'MERCHANT INFORMATION',
+        title: 'BANK INFORMATION',
         template: '/views/setup/partial/merchant-info.html',
         disabled: true
     },
@@ -59,9 +59,21 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
         
     }];
     
-    $scope.loadForm = function() {
-      $scope.frmDetails = $scope.frmDetails == false ? true : false;
+    $scope.loadForm = function(type) {
+      if(type == 'frmBankDetails') {
+        $scope.frmBankDetails = $scope.frmBankDetails == false ? true : false;
+      } else if(type == 'frmBillPlan') {
+        $scope.frmBillPlan = $scope.frmBillPlan == false ? true : false;
+      } else if(type == 'frmLegalInfo') {
+        $scope.frmLegalInfo = $scope.frmLegalInfo == false ? true : false;
+      } else if(type == 'frmBank') {
+        $scope.frmBank = $scope.frmBank == false ? true : false;
+      }
     }
     
     $scope.roles = [{name: 'Inventory 1'}, {name: 'Inventory 2'}, {name: 'Inventory 3'}, {name: 'Inventory 4'}];
+    
+    
+    var dv= "<form action='#' class='form-horizontal'><div class='row margin-top-10'><div class='col-md-12 text-left'><label>Custom Priviledges</label></div></div><div class='row margin-top-10 margin-bottom-10'><div class='col-md-4'><select class='form-control'><option>Value</option></select></div><div class='col-md-4'><select class='form-control'><option>Is less then</option></select></div><div class='col-md-4'><input type='text' class='form-control' value='Rs. 1000'/></div></div></form>";
+    $scope.htmlTooltip = $sce.trustAsHtml(dv);
 }]);

@@ -1,4 +1,4 @@
-<div class="row" ng-hide="frmDetails">
+<div class="row" ng-hide="frmBillPlan">
 	<div class="col-md-12">
 		<!-- Begin: life time stats -->
 			<div class="portlet-body form">
@@ -6,7 +6,7 @@
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
-                <button class="btn btn-default btn-circle-but" type="button" ng-click="loadForm()">Change Plan</button>
+                <button class="btn btn-custom-3 btn-lg" type="button" ng-click="loadForm('frmBillPlan')">Change Plan</button>
 							</div>
 						</div>
             
@@ -29,7 +29,7 @@
 	</div>
 </div>
 
-<div class="row" ng-show="frmDetails">
+<div class="row" ng-show="frmBillPlan">
 	<div class="col-md-4">
     <div class="portlet mt-element-ribbon light portlet-fit bordered">
         <div class="ribbon ribbon-right ribbon-clip ribbon-shadow ribbon-border-dash-hor ribbon-color-success uppercase">
@@ -44,6 +44,7 @@
             <li class="green"><i class="fa fa-check"></i> Unlimited Access</li>
             <li class="red"><i class="fa fa-close"></i> Unlimited Access</li>
           </ul>
+          
         </div>
     </div>
 	</div>
@@ -83,4 +84,8 @@
         </div>
     </div>
 	</div>
+  
+  <div class="col-md-12 text-center">
+                <button type="button" class="btn-custom-7">Cancel</button> <button type="button" class="btn-custom-6">Save</button>
+              </div>
 </div>

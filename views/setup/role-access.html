@@ -1,22 +1,139 @@
 <!-- BEGIN PAGE HEADER-->
-<div class="page-bar">
+<div class="page-bar ng-scope">
   <ul class="page-breadcrumb">
       <li>
           <a href="#/dashboard.html">Setup</a>
           <i class="fa fa-angle-right"></i>
       </li>
       <li>
-          <a href="#/dashboard.html">Business Setup</a>
+          <a href="#/dashboard.html">Role Access Settings</a>
       </li>
   </ul>
 </div>
+<div class="clearfix"></div>
+<h3 class="page-title"> ROLE ACCESS LEVEL </h3>
+<div class="clearfix"></div>
 
-<h3 class="page-title"> Business Setup </h3>
+<div class="row ng-scope">
+	<div class="col-md-5">
+    <div class="input-group">
+      <div class="input-group-btn">
+          <button data-toggle="dropdown" class="btn dropdown-toggle btn-lg btn-custom-5" type="button">Action
+              <i class="fa fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+              <li>
+                  <a href="javascript:;"> Action </a>
+              </li>
+              <li>
+                  <a href="javascript:;"> Another action </a>
+              </li>
+              <li>
+                  <a href="javascript:;"> Something else here </a>
+              </li>
+              <li class="divider"> </li>
+              <li>
+                  <a href="javascript:;"> Separated link </a>
+              </li>
+          </ul>
+      </div>
+      <!-- /btn-group -->
+      <div class="input-icon input-icon-lg">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search for products" class="form-control custom-input-lg">
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <button type="button" class="btn btn-custom-3 btn-lg">+ Add roles</button>
+  </div>
+  
+  <div class="col-md-3 text-right">
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-slack"></i></button>
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-eye-slash"></i></button>
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-refresh"></i></button>
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-print"></i></button>
+  </div>
+</div>
 
-<div class="row">
-	<div class="col-md-12">
-    <tabset>
-      <tab ng-repeat="tab in btabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled"><div ng-include="tab.template"></div></tab>
-    </tabset>
+<div class="row ng-scope margin-top-10">
+	<div class="col-md-12 add-roles">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th></th>
+            <th>NAME</th>
+            <th>OPERATION</th>
+            <th>ACCESS RIGHT 1</th>
+            <th>ACCESS RIGHT 2</th>
+            <th>ACCESS RIGHT 3</th>
+            <th>ACCESS RIGHT 4</th>
+            <th>ACCESS RIGHT 5</th>
+            <th>ACCESS RIGHT 6</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td><i class="fa fa-angle-right"></i></td>
+            <td><a href="#">Priviledges 1</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td><i class="fa fa-angle-right"></i></td>
+            <td><a href="#">Priviledges 2</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down"></i></td>
+            <td><a href="#">Priviledges 3</a></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#">Sub-Priviledges 1</a></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#">Sub-Priviledges 2</a></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+            <td><input type="checkbox" name="" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

@@ -1,24 +1,44 @@
-<div class="row" ng-hide="frmDetails">
-	<div class="col-md-12">
+<div class="row" ng-hide="frmBankDetails">
+	<div class="col-md-6">
 		<!-- Begin: life time stats -->
 			<div class="portlet-body form">
 				<form action="#" class="form-horizontal">
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
-                <button class="btn btn-default btn-circle-but" type="button" ng-click="loadForm()">Change Plan</button>
+                <button class="btn btn-custom-3 btn-lg" type="button" ng-click="loadForm('frmBankDetails')"><i class="fa fa-pencil"></i> Edit</button>
 							</div>
 						</div>
             
             <div class="form-group">
               <div class="col-md-12">
-                <label class="control-label">Bill Name | Monthly Plan (Rs. 999)</label>
+                <label class="control-label">Company Name | Trilia System Pvt Ltd.</label>
+							</div>
+						</div>
+            
+            <div class="form-group">
+              <div class="col-md-6">
+                <label class="control-label">Phone no | 9873459299</label>
+							</div>
+              
+              <div class="col-md-6">
+                <label class="control-label">Email | sales@trilia.com</label>
 							</div>
 						</div>
             
             <div class="form-group">
               <div class="col-md-12">
-                <label class="control-label">Effective Date Range | 01 Jan, 2016 To 31 Jan, 2016</label>
+                <label class="control-label text-left" style="text-align:left;">Registered Business Address | Xyx-123, Kum, ABC Street, Konark India-110054</label>
+							</div>
+						</div>
+            
+            <div class="form-group">
+              <div class="col-md-6">
+                <label class="control-label">No. of employees | 10-25</label>
+							</div>
+              
+              <div class="col-md-6">
+                <label class="control-label">Business Entity Type | Private</label>
 							</div>
 						</div>
           </div>
@@ -29,14 +49,14 @@
 	</div>
 </div>
 
-<div class="row" ng-show="frmDetails">
+<div class="row" ng-show="frmBankDetails">
 	<div class="col-md-12">
 		<!-- Begin: life time stats -->
 			<form action="#" class="form-horizontal">
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
-							<label class="control-label">Logistics Name</label>
+							<label class="control-label">Company Name</label>
               </div>
 							<div class="col-md-12">
 								<input class="form-control" id="mask_date" type="text" placeholder="Add Company Name" />
@@ -73,7 +93,15 @@
               <div class="col-md-6">
 							<label class="control-label">No. of employees</label>
               </div>
-							<div class="col-md-12">
+              <div class="col-md-6">
+							<label class="control-label">Business Entity type</label>
+              </div>
+							<div class="col-md-6">
+								<select class="form-control">
+                  <option>--Select business entity--</option>
+                </select>
+							</div>
+              <div class="col-md-6">
 								<select class="form-control">
                   <option>--Select business entity--</option>
                 </select>
@@ -84,7 +112,7 @@
           
           <div class="form-group">
               <div class="col-md-12 text-center">
-                <button class="btn btn-default btn-circle-but" type="button">Cancel</button> <button class="btn blue-madison btn-circle-but" type="button">Submit</button>
+                <button class="btn-custom-7" type="button">Cancel</button> <button class="btn-custom-6" type="button">Submit</button>
               </div>
 						</div>
             

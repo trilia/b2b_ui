@@ -11,7 +11,7 @@
         onAddNode: null,
         onDeleteNode: null,
         onClickNode: null,
-        newNodeText: 'Add Child'
+        newNodeText: '&nbsp;'
     };
 
     function OrgChart($container, opts){

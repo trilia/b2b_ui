@@ -17,9 +17,9 @@
   
   <div class="col-md-6 text-right">
     <div class="btn-group btn-group-solid">
-        <button class="btn btn-custom-1 page-title-group" type="button">
+        <button class="btn  btn-custom-1 page-title-group" type="button">
             <i class="fa fa-list"></i> List View</button>
-        <button class="btn btn-custom-2 page-title-group" type="button"  ng-click="load('chart')">
+        <button class="btn  btn-custom-2 page-title-group" type="button">
             <i class="fa fa-cogs"></i> Chart View</button>
     </div>
   </div>
@@ -57,9 +57,9 @@
   </div>
   
   <div class="col-md-5">
-    <button type="button" class="btn btn-custom-3 btn-lg" ng-click="load('roles')"><i class="fa fa-suitcase"></i> Roles</button>
+    <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-suitcase"></i> Roles</button>
     <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-trash"></i> Discard</button>
-    <button type="button" class="btn btn-custom-3 btn-lg" ng-click="load('add-employee')">+ New Employee</button>
+    <button type="button" class="btn btn-custom-3 btn-lg">+ New Employee</button>
   </div>
   
   <div class="col-md-2 text-right">
@@ -85,6 +85,11 @@
         </thead>
         
         <tbody>
+          <tr class="">
+            <td colspan="7">
+              DEPARTMENT 1 <i class="fa fa-angle-down"></i>
+            </td>
+          </tr>
           <tr>
             <td><input type="checkbox" name="" /></td>
             <td><a href="#">John Doe</a></td>
@@ -105,6 +110,11 @@
             <td>Online</td>
           </tr>
           <tr>
+            <td colspan="7">
+              DEPARTMENT 2 <i class="fa fa-angle-down"></i>
+            </td>
+          </tr>
+          <tr>
             <td><input type="checkbox" name="" /></td>
             <td><a href="#">Garima Jain</a></td>
             <td>Product Manager</td>
@@ -112,6 +122,31 @@
             <td>Product Catalog</td>
             <td>John Doe</td>
             <td>23 hrs ago</td>
+          </tr>
+          
+          <tr>
+            <td colspan="7">
+              DEPARTMENT 3 <i class="fa fa-angle-down"></i>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" /></td>
+            <td><a href="#">John Doe</a></td>
+            <td>CEO</td>
+            <td>123456786</td>
+            <td>All</td>
+            <td>You</td>
+            <td>You</td>
+          </tr>
+          
+          <tr>
+            <td><input type="checkbox" name="" /></td>
+            <td><a href="#">John Snow</a></td>
+            <td>HR Lead</td>
+            <td>124456786</td>
+            <td>HR</td>
+            <td>John Doe</td>
+            <td>Online</td>
           </tr>
         </tbody>
       </table>

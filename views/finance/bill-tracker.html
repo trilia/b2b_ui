@@ -1,28 +1,24 @@
 <div class="page-bar">
   <ul class="page-breadcrumb">
       <li>
-          <a href="#">Wharehouse Management</a>
+          <a href="#">Finance</a>
           <i class="fa fa-angle-right"></i>
       </li>
       <li>
-          <a href="#">Bhiwandi Wharehouse</a>
-          <i class="fa fa-angle-right"></i>
-      </li>
-      <li>
-          <a href="#">Defects</a>
+          <a href="#">Bill Tracker</a>
       </li>
   </ul>
 </div>
 
 <div class="row">
 	<div class="col-md-6">
-    <h3 class="page-title"> Bhiwandi Wharehouse Defects</h3>
+    <h3 class="page-title"> BILL TRACKER</h3>
   </div>
   
 </div>
 
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-4">
     <div class="input-group">
       <div class="input-group-btn">
           <button type="button" class="btn dropdown-toggle btn-lg" data-toggle="dropdown">Filter
@@ -47,19 +43,19 @@
       <!-- /btn-group -->
       <div class="input-icon input-icon-lg">
         <i class="fa fa-search"></i>
-        <input type="text" class="form-control input-lg" placeholder="Search for products.">
+        <input type="text" class="form-control input-lg" placeholder="Search for products">
       </div>
     </div>
   </div>
   
-  <div class="col-md-3">
-    
+  <div class="col-md-5">
+    <button class="btn btn-default" type="">15,25,000.32<BR>30 Open Bills</button>
+    <button class="btn btn-default" type="">12,16,210.36<BR>11 Overdue</button>
+    <button class="btn btn-default" type="">854,45,561.28<BR>54 Paid in last 30 days</button>
   </div>
   
-  <div class="col-md-3 text-right">
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-slack"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-eye-slash"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-download"></i></button>
+  <div class="col-md-2 text-right">
+    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-refresh"></i></button>
     <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-print"></i></button>
   </div>
 </div>
@@ -71,53 +67,56 @@
         <thead>
           <tr>
             <th><input type="checkbox" class="group-checkable"></th>
-            <th>NAME</th>
-            <th>CATEGORY</th>
-            <th>SKU</th>
-            <th>RECEIVE DATE</th>
-            <th>PO</th>
-            <th>DEFECT QTY</th>
-            <th>DEFECTIVE REASONS</th>
-            <th>DEFECT %</th>
+            <th>VENDOR</th>
+            <th>TYPE</th>
+            <th>NUMBER</th>
+            <th>DATE</th>
+            <th>DUE DATE</th>
+            <th>STATUS</th>
+            <th>AMOUNT DUE</th>
+            <th>TAKE ACTION</th>
           </tr>
         </thead>
         
         <tbody>
-          
           <tr>
             <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="">Speedo Swimming Trunks</a></td>
-            <td>Sportswear</td>
-            <td>92823124512</td>
-            <td>24/08/15</td>
-            <td>2453652</td>
-            <td>419</td>
-            <td>Broken</td>
-            <td>41%</td>
+            <td><a href="">Speedo Trunks Seller</a></td>
+            <td>Bill</td>
+            <td>101</td>
+            <td>10/01/16</td>
+            <td>10/01/16</td>
+            <td>Overdue</td>
+            <td>24,340</td>
+            <td>
+              <button type="button" class="btn dropdown-toggle btn-lg" data-toggle="dropdown">Pay Bill
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </td>
           </tr>
           
           <tr>
             <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="">Ray Ban Glasses</a></td>
-            <td>Eyewear</td>
-            <td>92823123453</td>
-            <td>19/08/15</td>
-            <td>9823445</td>
-            <td>932</td>
-            <td>Damaged</td>
-            <td>92%</td>
+            <td><a href="">Ray Ban Glasses Seller</a></td>
+            <td>Bill</td>
+            <td>102</td>
+            <td>10/02/16</td>
+            <td>10/02/16</td>
+            <td>Overdue</td>
+            <td>4,560</td>
+            <td></td>
           </tr>
           
           <tr>
             <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="">Oakley Women's Glasses</a></td>
-            <td>Eyewear</td>
-            <td>92823123456</td>
-            <td>10/08/15</td>
-            <td>73643</td>
-            <td>209</td>
-            <td>Broken</td>
-            <td>20%</td>
+            <td><a href="">Oakley Glasses Seller</a></td>
+            <td>Bill</td>
+            <td>103</td>
+            <td>10/3/16</td>
+            <td>10/3/16</td>
+            <td>Overdue</td>
+            <td>999</td>
+            <td></td>
           </tr>
         </tbody>
       </table>

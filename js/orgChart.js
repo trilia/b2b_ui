@@ -2,12 +2,14 @@ TriliaApp.directive('orgChart', ['$rootScope', '$compile',
     function($rootScope, $compile) {
       return {
         restrict: 'E',
+        replace: true,
         link: function (scope, element, attrs) {
+          console.log('here in chart');
           var html = '<div id="orgChartContainer"><div id="orgChart"></div></div><div id="consoleOutput"></div>';
           var el = $compile(html)(scope);
           element.append(el);
           var testData = [{id: 1, name: 'Trilia', parent: 0},
-            {id: 2, name: 'Mr. Shinde (cxo)', parent: 1},
+            {id: 2, name: 'Mr. Shinde <br /><span>(cxo)</span>', parent: 1},
             {id: 3, name: 'Mr. Rao (CEO)', parent: 1},
             {id: 4, name: 'Mr. Chakravorthy (Director)', parent: 1},
             {id: 6, name: 'Mr. Jolie (Manager)', parent: 3},
@@ -35,7 +37,7 @@ TriliaApp.directive('orgChart', ['$rootScope', '$compile',
           });
           // just for example purpose
           function log(text){
-              $('#consoleOutput').append('<p>'+text+'</p>')
+              //$('#consoleOutput').append('<p>'+text+'</p>')
           }
         }
       };

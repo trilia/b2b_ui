@@ -1,4 +1,4 @@
-<div class="row" ng-hide="frmDetails">
+<div class="row" ng-hide="frmBank">
 	<div class="col-md-12">
 		<!-- Begin: life time stats -->
 			<div class="portlet-body form">
@@ -6,7 +6,7 @@
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
-                <button class="btn btn-default btn-circle-but" type="button" ng-click="loadForm()"><i class="fa fa-edit"></i> Edit</button>
+                <button class="btn btn-custom-3 btn-lg" type="button" ng-click="loadForm('frmBank')"><i class="fa fa-pencil"></i> Edit</button>
 							</div>
 						</div>
             
@@ -36,7 +36,7 @@
             
             <div class="form-group">
               <div class="col-md-12">
-                Digital Signature | <button type="button" class="btn btn-default btn-circle-but"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-default btn-circle-but"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSL Certificate | <button type="button" class="btn btn-default btn-circle-but"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-default btn-circle-but"><i class="fa fa-edit"></i></button>
+                Digital Signature | <button type="button" class="btn btn-custom-4 btn-lg"><span class="glyphicon glyphicon-eye-open"> </span></button> <button type="button" class="btn btn-custom-4 btn-lg"><i class="fa fa-download"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSL Certificate | <button type="button" class="btn btn-custom-4 btn-lg"><span class="glyphicon glyphicon-eye-open"> </span></button> <button type="button" class="btn btn-custom-4 btn-lg"><i class="fa fa-download"></i></button>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
 	</div>
 </div>
 
-<div class="row" ng-show="frmDetails">
+<div class="row" ng-show="frmBank">
 	<div class="col-md-12">
 		<!-- Begin: life time stats -->
 			<form action="#" class="form-horizontal">
@@ -99,8 +99,8 @@
           
           <div class="form-group">
               <div class="col-md-12 text-left">
-                <button class="btn btn-default btn-circle-but" type="button">Cancel</button>
-                <button class="btn blue-madison btn-circle-but" type="button">Save</button>
+                <button class="btn-custom-7" type="button">Cancel</button>
+                <button class="btn-custom-6" type="button">Save</button>
               </div>
           </div>
         </form>

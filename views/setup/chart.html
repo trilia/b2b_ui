@@ -6,15 +6,28 @@
           <i class="fa fa-angle-right"></i>
       </li>
       <li>
-          <a href="#/dashboard.html">Business Setup</a>
+          <a href="#/dashboard.html">Employee Setup</a>
       </li>
   </ul>
 </div>
 
-<h3 class="page-title"> Business Setup </h3>
+<div class="row">
+	<div class="col-md-6">
+    <h3 class="page-title"> Employees</h3>
+  </div>
+  
+  <div class="col-md-6 text-right">
+    <div class="btn-group btn-group-solid">
+        <button class="btn btn-custom-2 page-title-group" type="button">
+            <i class="fa fa-list"></i> List View</button>
+        <button class="btn btn-custom-1 page-title-group" type="button"  ng-click="load('chart')">
+            <i class="fa fa-cogs"></i> Chart View</button>
+    </div>
+  </div>
+</div>
 
 <div class="row">
-	<div class="col-md-12">
-    <org-chart></org-chart>
+	<div class="col-md-12" id="chart-view">
+   <org-chart></org-chart>
   </div>
 </div>
