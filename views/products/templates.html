@@ -15,13 +15,21 @@
     <h3 class="page-title"> TEMPLATES</h3>
   </div>
   
+  <div class="col-md-6 text-right">
+    <div class="btn-group btn-group-solid">
+        <button class="btn btn-custom-1 page-title-group" type="button">
+            <i class="fa fa-list"></i> List View</button>
+        <button class="btn btn-custom-2 page-title-group" type="button"  ng-click="load('chart')">
+            <i class="fa fa-cogs"></i> Chart View</button>
+    </div>
+  </div>
 </div>
 
 <div class="row">
 	<div class="col-md-5">
     <div class="input-group">
       <div class="input-group-btn">
-          <button type="button" class="btn dropdown-toggle btn-lg" data-toggle="dropdown">Filter
+          <button type="button" class="btn dropdown-toggle btn-lg btn-custom-5" data-toggle="dropdown">Action
               <i class="fa fa-angle-down"></i>
           </button>
           <ul class="dropdown-menu">
@@ -43,26 +51,26 @@
       <!-- /btn-group -->
       <div class="input-icon input-icon-lg">
         <i class="fa fa-search"></i>
-        <input type="text" class="form-control input-lg" placeholder="Search for products">
+        <input type="text" class="form-control custom-input-lg" placeholder="Search for products">
       </div>
     </div>
   </div>
   
   <div class="col-md-5">
-    <button type="button" class="btn btn-default btn-lg btn-circle-but"><i class="fa fa-"></i> Discard</button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button">Add Template From Repository</button>
+    <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-trash"></i> Discard</button>
+    <button type="button" class="btn btn-custom-3 btn-lg" ng-click="load('add-employee')">+ Add Template From Repository</button>
   </div>
   
   <div class="col-md-2 text-right">
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-download"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-print"></i></button>
+    <button type="button" class="btn btn-custom-4 btn-lg" popover="Download" popover-trigger="mouseenter"><i class="fa fa-download"></i></button>
+    <button type="button" class="btn btn-custom-4 btn-lg" popover="Print" popover-trigger="mouseenter"><i class="fa fa-print"></i></button>
   </div>
 </div>
 
 <div class="row margin-top-10">
 	<div class="col-md-12">
     <div class="table-responsive">
-      <table class="table table-striped table-hover">
+     <table class="table table-striped table-hover">
         <thead>
           <tr>
             <th><input type="checkbox" class="group-checkable"></th>

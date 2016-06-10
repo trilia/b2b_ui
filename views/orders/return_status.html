@@ -1,18 +1,22 @@
-<!-- BEGIN PAGE HEADER-->
 <div class="page-bar">
   <ul class="page-breadcrumb">
       <li>
-          <a href="#/dashboard.html">Order Management</a>
+          <a href="#">Order Management</a>
           <i class="fa fa-angle-right"></i>
       </li>
       <li>
-          <a href="#">Shipping</a>
+          <a href="#">Return Status</a>
       </li>
   </ul>
-<div>
-<div class="clearfix"></div>
-<h3 class="page-title">Shipping</h3>
-<div class="clearfix"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+    <h3 class="page-title"> RETURN STATUS</h3>
+  </div>
+  
+</div>
+
 <div class="row">
 	<div class="col-md-4">
     <div class="input-group">
@@ -44,63 +48,67 @@
     </div>
   </div>
   
-  <div class="col-md-3">
-    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-rotate-left"></i> Reverse</button>
+  <div class="col-md-5">
+    
   </div>
   
   <div class="col-md-3 text-right">
     <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-slack"></i></button>
     <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-eye-slash"></i></button>
-    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-download"></i></button>
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-refresh"></i></button>
     <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-print"></i></button>
   </div>
 </div>
 
-<!-- BEGIN MAIN CONTENT -->
-<div class="row">
+<div class="row margin-top-10">
 	<div class="col-md-12">
-		
-    <div class="table-container">
-      <table class="table table-striped table-bordered table-hover" id="datatable_ajax">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
         <thead>
-          <tr role="row" class="heading">
-            <th width="2%">
-              <input type="checkbox" class="group-checkable">
-            </th>
-            <th width="5%">
-              Record&nbsp;#
-            </th>
-            <th width="15%">
-              Date
-            </th>
-            <th width="15%">
-              Customer
-            </th>
-            <th width="10%">
-              Ship&nbsp;To
-            </th>
-            <th width="10%">
-              Price
-            </th>
-            <th width="10%">
-              Amount
-            </th>
-            <th width="10%">
-              Status
-            </th>
-            <th width="10%">
-              Actions
-            </th>
+          <tr>
+            <th><input type="checkbox" class="group_checkable" ></th>
+            <th>RETURN DATE</th>
+            <th>RETURN NO</th>
+						<th>AWB NO</th>
+            <th>DELIVERY TO</th>
+            <th>LOGISTICS PARTNER</th>
+						<th>Status</th>
           </tr>
         </thead>
+        
         <tbody>
+          
+          <tr>
+            <td><input type="checkbox" class="group_checkable" ></td>
+            <td>24/08/15</td>
+            <td>OM23453ES</td>
+            <td><a href="">92823124512</a></td>
+						<td>Bhiwandi</td>
+						<td>DHL</td>
+						<td>New</td>
+          </tr>
+          
+          <tr>
+            <td><input type="checkbox" class="group_checkable" ></td>
+            <td>19/08/15</td>
+            <td>OM98234ES</td>
+            <td><a href="">92823123453</a></td>
+						<td>Uran</td>
+						<td>UPS</td>
+						<td>Picked</td>
+          </tr>
+          
+          <tr>
+            <td><input type="checkbox" class="group_checkable" ></td>
+            <td>10/08/15</td>
+            <td>OM73643ES</td>
+            <td><a href="">92823123456</a></td>
+						<td>Uran</td>
+						<td>Delhivery</td>
+						<td>Delivered</td>
+          </tr>
         </tbody>
       </table>
     </div>
-		<!-- End: life time stats -->
-	</div>
+  </div>
 </div>
-<!-- END MAIN CONTENT -->
-<script>
-	TableAjax.init();
-</script>
