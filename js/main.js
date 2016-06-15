@@ -555,6 +555,18 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           templateUrl: "views/orders/packaging.html",
           data: {pageTitle: 'Packaging'}      
       })
+	  
+	  .state("orders.create-purchase-order", {
+          url: "/create-purchase-order",
+          templateUrl: "views/orders/create-purchase-order.html",
+          data: {pageTitle: 'create-purchase-order'}      
+      })
+	  
+	  .state("orders.po-details", {
+          url: "/po-details",
+          templateUrl: "views/orders/po-details.html",
+          data: {pageTitle: 'po-details'}      
+      })
       
       .state("orders.shipping", {
           url: "/shipping",
