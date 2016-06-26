@@ -1,36 +1,36 @@
 <!-- BEGIN HEADER INNER -->
 <div class="page-header-inner">
-    <!-- BEGIN LOGO -->
-    <div class="page-logo">
-				<div class="menu-toggler sidebar-toggler"></div>
-        <a href="#/"><img ng-src="{{settings.layoutPath}}/images/logo.png" alt="logo" class="logo-default" /></a>
-        
-    </div>
-    <!-- END LOGO -->
-    
     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
     <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
     <!-- END RESPONSIVE MENU TOGGLER -->
+    <!-- BEGIN LOGO -->
+    <div class="page-logo">
+        <div class="menu-toggler sidebar-toggler visible-xs"></div>
+        <a href="#/"><img ng-src="{{settings.layoutPath}}/images/logo.png" alt="logo" class="logo-default" /></a>
+
+    </div>
+    <!-- END LOGO -->
+
     <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="top-menu">
         <!-- BEGIN HEADER SEARCH BOX -->
-    <form class="search-form" action="#" method="GET">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search..." name="query">
-            <span class="input-group-btn">
+        <form class="search-form" action="#" method="GET">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search..." name="query">
+                <span class="input-group-btn">
                 <a href="javascript:;" class="btn submit">
-                    <i class="icon-magnifier"></i>
+                    <i class="icon magnifier"></i>
                 </a>
             </span>
-        </div>
-    </form>
-    <!-- END HEADER SEARCH BOX -->
-        <ul class="nav navbar-nav pull-right">
+            </div>
+        </form>
+        <!-- END HEADER SEARCH BOX -->
+        <ul class="nav navbar-nav pull-right top_account_wrapper">
             <!-- BEGIN NOTIFICATION DROPDOWN -->
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
             <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
                 <a href="#" class="dropdown-toggle" dropdown-menu-hover data-toggle="dropdown" data-close-others="true">
-                    <i class="icon-bell"></i>
+                    <i class="icon bell"></i>
                     <span class="badge badge-default"> 7 </span>
                 </a>
                 <ul class="dropdown-menu">
@@ -127,7 +127,7 @@
                 </ul>
             </li>
             <!-- END NOTIFICATION DROPDOWN -->
-            
+
             <!-- BEGIN USER LOGIN DROPDOWN -->
             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
             <li class="dropdown dropdown-user">
@@ -169,7 +169,7 @@
                 </ul>
             </li>
             <!-- END USER LOGIN DROPDOWN -->
-            
+
         </ul>
     </div>
     <!-- END TOP NAVIGATION MENU -->

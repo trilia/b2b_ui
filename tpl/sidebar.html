@@ -1,116 +1,103 @@
 <div class="page-sidebar navbar-collapse collapse">
-    <!-- BEGIN SIDEBAR MENU -->
-    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
-    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
-    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
-    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
-    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
-    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
     <ul class="page-sidebar-menu page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
-        <!--<li class="start nav-item">
-            <a href="#/login">
-                <i class="icon-home"></i>
-                <span class="title"></span>
-            </a>
-        </li>-->
-        <li class="start nav-item">
+        <li class="nav-item open">
             <a href="#/home">
-                <i class="icon-home"></i>
+                <i class="icon home"></i>
                 <span class="title">Home</span>
             </a>
         </li>
-				<li class="nav-item">
+        <li class="nav-item open">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon setup"></i>
                 <span class="title">Setup</span>
             </a>
             <ul class="sub-menu">
-              <li>
-                  <a href="#/setup/business">
-                      <span>Business Setup</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#/setup/employee">
-                    <span>Employee Setup</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#/setup/employee-big">
-                    <span>Employee Setup Big</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#/setup/inventory-setup">
-                      <span>Inventory Setup</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#/setup/role-access">
-                      <span>Role Access Settings</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#/setup/advanced-settings">
-                      <span>Advanced Settings</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#/setup/add-roles">
-                      <span>Add Roles</span>
-                  </a>
-              </li>
+                <li>
+                    <a href="#/setup/business">
+                        <span>Business Setup</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/setup/employee">
+                        <span>Employee Setup</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/setup/employee-big">
+                        <span>Employee Setup Big</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/setup/inventory-setup">
+                        <span>Inventory Setup</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/setup/role-access">
+                        <span>Role Access Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/setup/advanced-settings">
+                        <span>Advanced Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/setup/add-roles">
+                        <span>Add Roles</span>
+                    </a>
+                </li>
             </ul>
         </li>
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon product"></i>
                 <span class="title">Product Management</span>
             </a>
             <ul class="sub-menu">
                 <li>
                     <a href="#/catalog-setup">
-                      <span>  Catalog Setup</span>
+                        <span>  Catalog Setup</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/templates">
-                        Templates</span>
+                        <span>Templates</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#/categories">
-                      <span>  Categories</span>
+                        <span>  Categories</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#/add-product">
-                      <span>  Add a Product</span>
+                        <span>  Add a Product</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#/collections">
-                      <span>  Collections</span>
+                        <span>  Collections</span>
                     </a>
                 </li>
-                
+
             </ul>
         </li>
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon partners"></i>
                 <span class="title">Partners</span>
             </a>
             <ul class="sub-menu">
-								<li>
+                <li>
                     <a href="#/partners/dashboard">
                         <span> Dashboard</span>
                     </a>
@@ -132,189 +119,108 @@
                 </li>
             </ul>
         </li>
-        <!--<li class="start nav-item">
-            <a href="#/dashboard.html">
-                <i class="icon-home"></i>
-                <span class="title">Dashboard</span>
-            </a>
-        </li>
         <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-bag"></i>
-                <span class="title">Operations</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
-                <span class="title">Customer</span>
-                <span class="arrow"></span>
+                <i class="icon warehouse"></i>
+                <span class="title">Warehouse Management</span>
             </a>
             <ul class="sub-menu">
                 <li>
-                    <a href="#/customers/dashboard">
-                        <i class="icon-puzzle"></i> Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/customers/list">
-                        <i class="icon-paper-clip"></i> Customers List</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/customers/details">
-                        <i class="icon-paper-clip"></i> Customers Details</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#/settings">
-                <i class="icon-settings"></i>
-                <span class="title">Inventory</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
-                <span class="title">Role Access</span>
-                <span class="arrow"></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="#/access/receiving">
-                        <i class="icon-puzzle"></i> Receiving</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/access/storage">
-                        <i class="icon-paper-clip"></i> Storage</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/access/sales-channel">
-                        <i class="icon-check"></i> Sales Channel</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/access/processing">
-                        <i class="icon-check"></i> Processing</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/access/shipment">
-                        <i class="icon-check"></i> Shipment</span>
+                    <a href="#/orders/warehouse_mgmt">
+                        <span> Warehouse Management</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/access/defects">
-                        <i class="icon-check"></i> Defects</span>
+                        <span> Defects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/access/receiving">
+                        <span> Receiving</span>
                     </a>
                 </li>
             </ul>
-        </li>-->
-				<li class="nav-item">
-          <a href="javascript:;" class="nav-link nav-toggle">
-              <i class="icon-check"></i> 
-              <span class="title">Warehouse Management</span>
-          </a>
-            <ul class="sub-menu">
-              <li>
-                <a href="#/orders/warehouse_mgmt">
-                   <span> Warehouse Management</span>
-                </a>
-              </li>
-              <li>
-                <a href="#/access/defects">
-                   <span> Defects</span>
-                </a>
-              </li>
-              <li>
-                <a href="#/access/receiving">
-                   <span> Receiving</span>
-                </a>
-              </li>
-            </ul>
-				</li>
-				<li class="nav-item">
+        </li>
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon management"></i>
                 <span class="title">Order Management</span>
             </a>
             <ul class="sub-menu">
                 <li>
                     <a href="#/orders/dashboard">
-                       <span> Dashboard</span>
+                        <span> Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/orders/dashboard1">
-                       <span> Dashboard1</span>
+                        <span> Dashboard1</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#/orders/processing">
-                       <span> Processing</span>
+                        <span> Processing</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#/orders/calendar-view">
-                        Order Processing Calendar View</span>
+                        <span>Order Processing Calendar View</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/orders/packaging">
-                        Packaging</span>
+                        <span>Packaging</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/orders/shipping">
-                        Shipping</span>
+                        <span>Shipping</span>
                     </a>
                 </li>
-								<li>
+                <li>
                     <a href="#/orders/return">
                         <span> return</span>
                     </a>
                 </li>
-								<li>
+                <li>
                     <a href="#/orders/return-status">
                         <span> return status</span>
                     </a>
                 </li>
-								<li>
+                <li>
                     <a href="#/orders/return-request">
                         <span> return request</span>
                     </a>
                 </li>
-				<li>
-                <a href="#/access/purchase-order">
-                   <span> purchase order</span>
-                </a>
-				</li>
-				<li>
-				<a href="#/orders/create-purchase-order">
-                   <span> create purchase order</span>
-                </a>
-              </li>
-			  <li>
-				<a href="#/orders/po-details">
-                   <span> po details</span>
-                </a>
-              </li>
+                <li>
+                    <a href="#/access/purchase-order">
+                        <span> purchase order</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/orders/create-purchase-order">
+                        <span> create purchase order</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/orders/po-details">
+                        <span> po details</span>
+                    </a>
+                </li>
             </ul>
         </li>
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon customer"></i>
                 <span class="title">Customer</span>
             </a>
             <ul class="sub-menu">
                 <li>
                     <a href="#/customers/dashboard">
-                       <span> Dashboard</span>
+                        <span> Dashboard</span>
                     </a>
                 </li>
                 <li>
@@ -329,9 +235,9 @@
                 </li>
             </ul>
         </li>
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon marketing"></i>
                 <span class="title">Marketing Sales</span>
             </a>
             <ul class="sub-menu">
@@ -362,26 +268,20 @@
                 </li>
             </ul>
         </li>
-				<!--<li class="nav-item">
-            <a href="#/settings">
-                <i class="icon-settings"></i>
-                <span class="title">Finance</span>
-            </a>
-        </li>-->
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon finance"></i>
                 <span class="title">Finance</span>
             </a>
             <ul class="sub-menu">
                 <li>
                     <a href="#/finance/dashboard">
-                       <span> Dashboard</span>
+                        <span> Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="#/finance/payment">
-                      <span>  Payment</span>
+                        <span>  Payment</span>
                     </a>
                 </li>
                 <li>
@@ -391,13 +291,13 @@
                 </li>
             </ul>
         </li>
-				<li class="nav-item">
+        <li class="nav-item">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-user"></i>
+                <i class="icon customer-care"></i>
                 <span class="title">Customer Care</span>
             </a>
             <ul class="sub-menu">
-								<li>
+                <li>
                     <a href="#/customer-care/dashboard">
                         <span> dashboard</span>
                     </a>
@@ -416,7 +316,7 @@
         </li>
         <li class="nav-item">
             <a href="#/settings">
-                <i class="icon-settings"></i>
+                <i class="icon settings"></i>
                 <span class="title">Settings</span>
             </a>
         </li>
