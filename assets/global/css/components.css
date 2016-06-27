@@ -9483,7 +9483,7 @@ Input icons
 }
 
 .input-icon.input-icon-lg > i {
-    margin-top: 16px;
+    margin-top: 13px;
 }
 
 .input-icon.input-icon-sm > i {
@@ -15767,11 +15767,11 @@ Dashboard Stats
     display: block;
     margin-bottom: 25px;
     overflow: hidden;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 
 .dashboard-stat:before,
@@ -15807,26 +15807,29 @@ Dashboard Stats
 }
 
 .dashboard-stat .details {
-    position: absolute;
+    /*position: absolute;
     right: 15px;
-    padding-right: 15px;
+    padding-right: 15px;*/
 }
 
 .dashboard-stat .details .number {
     padding-top: 25px;
-    text-align: right;
-    font-size: 34px;
+    text-align: left;
+    font-size: 28px;
     line-height: 36px;
     letter-spacing: -1px;
     margin-bottom: 0px;
-    font-weight: 300;
+    font-weight: 600;
+    color: #00a6de;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .dashboard-stat .details .desc {
-    text-align: right;
-    font-size: 16px;
+    text-align: left;
+    font-size: 14px;
     letter-spacing: 0px;
-    font-weight: 300;
+    font-weight: 600;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .dashboard-stat .more {

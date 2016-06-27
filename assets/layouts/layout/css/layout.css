@@ -3076,17 +3076,17 @@ Page Loading
 }
 
 .trilia-bg-color {
-	background-color: #F2F5F7 !important;
+	background-color: #f2f5f8 !important;
 }
 
 .portlet.box.lgrey-cascade > .portlet-title,
 .portlet.lgrey-cascade,
 .portlet > .portlet-body.lgrey-cascade {
-	background-color: #F2F5F7;
+	background-color: #f2f5f8;
 }
 
 .lGrey {
-	background-color: #F2F5F7;
+	background-color: #f2f5f8;
 	padding: 12px 20px 15px;
 }
 
@@ -3095,11 +3095,11 @@ Page Loading
 }
 
 .dashboard-stat .details .desc {
-	color: #4D4C4C !important;
+	color: #000 !important;
 }
 
 .portlet.light {
-	/*background-color: #f2f5f7 !important;*/
+	/*background-color: #f2f5f8 !important;*/
 	background-color: #FFFFFF !important;
 }
 
@@ -3255,6 +3255,9 @@ Page Loading
 	box-shadow: none;
 	outline: 0 none;
 }
+.input-group .form-control:focus {
+	z-index: inherit;
+}
 
 .form-horizontal .control-label {
 	margin-bottom: 4px;
@@ -3392,7 +3395,7 @@ textarea {
 }
 
 .custom-input-lg {
-	height: 41px;
+	height: 40px;
 }
 
 .popover-content {
