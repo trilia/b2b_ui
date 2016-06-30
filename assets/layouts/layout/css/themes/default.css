@@ -423,10 +423,6 @@ Common Classes
     background: #f6f6f6;
 }
 
-.page-sidebar-menu li.nav-item.open {
-    background: #ffffff;
-}
-
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,
 .page-sidebar .page-sidebar-menu {
@@ -465,6 +461,9 @@ Common Classes
 
 i.home {
     background-position: -28px -24px;
+}
+.nav-item:hover i.home, .open i.home {
+    background-position: -100px -24px;
 }
 i.setup {
     background-position: -30px -76px;
@@ -565,7 +564,7 @@ i.bell {
 .page-sidebar .page-sidebar-menu > li:hover > a,
 .page-sidebar .page-sidebar-menu > li.open > a {
     color: #00A6DE;
-    background:  #ffffff;
+    background: #fff;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i,
@@ -653,9 +652,12 @@ i.bell {
     background-color: #364150;
 }
 
-.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a,
 .page-sidebar .page-sidebar-menu .sub-menu > li > a {
     color: #002246;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu > li > a:hover, .page-sidebar .page-sidebar-menu .sub-menu > li > a:focus {
+    background: #fff;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i,

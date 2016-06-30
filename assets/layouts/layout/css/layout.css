@@ -1107,7 +1107,7 @@ Page sidebar
 	position: relative;
 	margin: 0;
 	border: 0px;
-	padding: 15px 15px 14px 15px;
+	padding: 21px 15px;
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 300;
@@ -1254,8 +1254,7 @@ Page sidebar
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu {
 	list-style: none;
 	display: none;
-	padding: 8px 0px 8px 0px;
-	;
+	padding: 0px;
 	margin: 0px;
 }
 
@@ -1272,7 +1271,7 @@ Page sidebar
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > a {
 	display: block;
 	margin: 0;
-	padding: 6px 15px 6px 43px;
+	padding: 12px 15px 12px 70px;
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 300;
