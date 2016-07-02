@@ -1,11 +1,17 @@
 @charset "UTF-8";
-
 /* Cubic Bezier Transition */
-
 body {
 	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 }
-
+.nopadding { padding: 0px; }
+.nomargin { margin: 0px; }
+.mb25 { margin-bottom: 20px; }
+::-webkit-input-placeholder { color:#666666!important }
+::-moz-placeholder { color:#666666!important }
+:-ms-input-placeholder { color:#666666!important }
+input:-moz-placeholder { color:#666666!important }
 @media print {
 	body {
 		background-color: #fff !important;
@@ -561,8 +567,8 @@ Page Header
 }
 
 
-/*** 
-Horizontal Menu 
+/***
+Horizontal Menu
 ***/
 
 .page-header.navbar {
@@ -1008,6 +1014,7 @@ Page container
 	.page-footer-fixed .page-container {
 		margin-bottom: 20px !important;
 	}
+	.ng-isolate-scope .nav-tabs > li { width: 190px; }
 }
 
 @media (max-width: 991px) {
@@ -1893,8 +1900,10 @@ Page content
 
 .page-content-white .page-title {
 	font-weight: 600;
-	margin: 25px 0;
+	margin: 10px 0px 44px 0px;
 	font-size: 24px;
+	text-transform: uppercase;
+	text-indent: -2px;
 }
 
 
@@ -1940,7 +1949,7 @@ Page content
 .page-bar .page-breadcrumb > li > a,
 .page-bar .page-breadcrumb > li > span {
 	color: #888;
-	font-size: 14px;
+	font-size: 12px;
 	text-shadow: none;
 }
 
@@ -1982,7 +1991,7 @@ Page content
 	background-color: #ffffff;
 	position: relative;
 	padding: 0px 20px;
-	margin: -25px -20px 0 -20px;
+	margin: 0px -20px 0 -20px;
 }
 
 .page-content-white .page-bar .page-breadcrumb,
@@ -2071,7 +2080,7 @@ Page content
 		margin-left: 235px;
 		margin-top: 0px;
 		min-height: 600px;
-		padding: 50px;
+		padding: 25px 50px 50px 50px;
 	}
 	.page-content-wrapper .page-content.no-min-height {
 		min-height: auto;
@@ -3015,8 +3024,8 @@ Page Quick Sidebar
 }
 
 
-/***  
-Page Loading       
+/***
+Page Loading
 ***/
 
 .page-on-load {
@@ -3194,7 +3203,8 @@ Page Loading
 .page-sidebar-closed .page-content-wrapper .page-footer {
 	margin-left: 42px !important;
 }
-
+.ng-isolate-scope .nav-tabs > li { margin-right: 5px; text-align: center; }
+.btn-custom-3 { padding: 8px 16px; }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -3235,15 +3245,15 @@ Page Loading
 	border-width: 1px;
 	color: #555;
 	cursor: default;
-	margin-left: 6px;
+	font-weight: 600;
 }
-
+iuput::place-holder { color: red; }
 .form-control {
 	background-color: #fff;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #aaaaaa;
 	border-radius: 4px;
 	box-shadow: none;
-	color: #333;
+	color: #666666;
 	font-size: 14px;
 	font-weight: normal;
 	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -3259,37 +3269,10 @@ Page Loading
 }
 
 .form-horizontal .control-label {
-	margin-bottom: 4px;
-	padding-top: 7px;
+	padding: 3px 0px;
 	text-align: right;
 	font-weight: 400;
 }
-
-
-/* .nav-tabs .ng-isolate-scope{
-  -moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-top-colors: none;
-	background-color: #fff;
-	border-color: #ddd #ddd transparent;
-	border-image: none;
-	border-style: solid;
-	border-width: 1px;
-	color: #555;
-	cursor: default;
-	margin-left: 6px;
-	margin-bottom: 0;
-} */
-
-
-/* .nav-tabs .ng-isolate-scope .active{
-  margin-bottom: -1px;
-}
-
-.active {
-  margin-bottom: -1px;
-} */
 
 .page-title-group {
 	margin: 25px 0px;
@@ -3353,28 +3336,30 @@ Page Loading
 .btn-custom-6 {
 	background-color: #00a6de !important;
 	color: #FFFFFF !important;
-	font-size: 14px !important;
+	font-size: 18px !important;
+	font-weight: 600;
 	border-color: #ACA8A3 !important;
-	width: 230pt !important;
-	height: 47pt !important;
+	width: 230px !important;
+	height: 47px !important;
 	border-radius: 5px !important;
 	border-radius: 5px !important;
-	box-shadow: #000000;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
 	border: none !important;
-	opacity: 20%;
+	margin: 0px 7.5px;
 }
 
 .btn-custom-7 {
 	background-color: #FFFFFF !important;
 	color: #333333 !important;
 	font-size: 14px !important;
+	font-weight: 600;
 	border-color: #ACA8A3 !important;
-	width: 230pt !important;
-	height: 47pt !important;
+	width: 230px !important;
+	height: 47px !important;
 	border-radius: 5px !important;
-	box-shadow: #000000;
-	border: 0.5px solid #999999 !important;
-	opacity: 20%;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5) !important;
+	border: 2px solid #999999 !important;
+	margin: 0px 7.5px;
 }
 
 .btn-custom-8 {

@@ -1,43 +1,43 @@
 <div class="row" ng-hide="frmBankDetails">
-	<div class="col-md-6">
+	<div class="col-lg-6 col-md-12 col-xs-12">
 		<!-- Begin: life time stats -->
 			<div class="portlet-body form">
 				<form action="#" class="form-horizontal">
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
-                <button class="btn btn-custom-3 btn-lg" type="button" ng-click="loadForm('frmBankDetails')"><i class="fa fa-pencil"></i> Edit</button>
+                <button class="btn btn-custom-3 btn-lg mb25" type="button" ng-click="loadForm('frmBankDetails')"><i class="fa fa-pencil"></i> Edit</button>
 							</div>
 						</div>
-            
+
             <div class="form-group">
-              <div class="col-md-12">
+              <div class="col-md-12 col-xs-12">
                 <label class="control-label">Company Name | Trilia System Pvt Ltd.</label>
 							</div>
 						</div>
-            
+
             <div class="form-group">
-              <div class="col-md-6">
+              <div class="col-md-6 col-xs-12">
                 <label class="control-label">Phone no | 9873459299</label>
 							</div>
-              
-              <div class="col-md-6">
+
+              <div class="col-md-6 col-xs-12">
                 <label class="control-label">Email | sales@trilia.com</label>
 							</div>
 						</div>
-            
+
             <div class="form-group">
-              <div class="col-md-12">
+              <div class="col-md-12 col-xs-12">
                 <label class="control-label text-left" style="text-align:left;">Registered Business Address | Xyx-123, Kum, ABC Street, Konark India-110054</label>
 							</div>
 						</div>
-            
+
             <div class="form-group">
-              <div class="col-md-6">
+              <div class="col-md-6 col-xs-12">
                 <label class="control-label">No. of employees | 10-25</label>
 							</div>
-              
-              <div class="col-md-6">
+
+              <div class="col-md-6 col-xs-12">
                 <label class="control-label">Business Entity Type | Private</label>
 							</div>
 						</div>
@@ -50,72 +50,76 @@
 </div>
 
 <div class="row" ng-show="frmBankDetails">
-	<div class="col-md-12">
+	<div class="col-md-12 col-xs-12">
 		<!-- Begin: life time stats -->
 			<form action="#" class="form-horizontal">
-          <div class="form-body">
-            <div class="form-group">
-              <div class="col-md-12">
-							<label class="control-label">Company Name</label>
-              </div>
-							<div class="col-md-12">
-								<input class="form-control" id="mask_date" type="text" placeholder="Add Company Name" />
+					<div class="col-lg-6 col-xs-12 nopadding form">
+						<div class="form-body">
+	            <div class="form-group">
+	              <div class="col-md-12">
+									<label class="control-label">Company Name</label>
+	              </div>
+								<div class="col-md-12">
+									<input class="form-control" id="mask_date" type="text" placeholder="Add Company Name" />
+								</div>
+							</div>
+
+	            <div class="form-group">
+	              <div class="col-md-6">
+								<label class="control-label">Phone no</label>
+	              </div>
+
+	              <div class="col-md-6">
+								<label class="control-label">Email</label>
+	              </div>
+								<div class="col-md-6">
+									<input class="form-control" id="mask_date" type="text" placeholder="Add Phone No" />
+								</div>
+
+	              <div class="col-md-6">
+									<input class="form-control" id="mask_date" type="text" placeholder="Add Email Address" />
+								</div>
+							</div>
+
+	            <div class="form-group">
+	              <div class="col-md-12">
+								<label class="control-label">Registration Business Address</label>
+	              </div>
+								<div class="col-md-12">
+									<textarea class="form-control" id="mask_date" type="text" placeholder="Add Registration Business Address"></textarea>
+								</div>
+							</div>
+
+	            <div class="form-group">
+	              <div class="col-md-6">
+								<label class="control-label">No. of employees</label>
+	              </div>
+	              <div class="col-md-6">
+								<label class="control-label">Business Entity type</label>
+	              </div>
+								<div class="col-md-6">
+									<select class="form-control">
+	                  <option>--Select business entity--</option>
+	                </select>
+								</div>
+	              <div class="col-md-6">
+									<select class="form-control">
+	                  <option>--Select business entity--</option>
+	                </select>
+								</div>
+							</div>
+
+	          </div>
+					</div>
+					<div class="col-xs-12">&nbsp;</div>
+					<div class="col-xs-12">
+						<div class="form-group">
+							<div class="col-md-12 text-center">
+								<button class="btn-custom-7" type="button">Cancel</button> <button class="btn-custom-6" type="button">Save</button>
 							</div>
 						</div>
-            
-            <div class="form-group">
-              <div class="col-md-6">
-							<label class="control-label">Phone no</label>
-              </div>
-              
-              <div class="col-md-6">
-							<label class="control-label">Email</label>
-              </div>
-							<div class="col-md-6">
-								<input class="form-control" id="mask_date" type="text" placeholder="Add Phone No" />
-							</div>
-              
-              <div class="col-md-6">
-								<input class="form-control" id="mask_date" type="text" placeholder="Add Email Address" />
-							</div>
-						</div>
-            
-            <div class="form-group">
-              <div class="col-md-12">
-							<label class="control-label">Registration Business Address</label>
-              </div>
-							<div class="col-md-12">
-								<textarea class="form-control" id="mask_date" type="text" placeholder="Add Registration Business Address"></textarea>
-							</div>
-						</div>
-            
-            <div class="form-group">
-              <div class="col-md-6">
-							<label class="control-label">No. of employees</label>
-              </div>
-              <div class="col-md-6">
-							<label class="control-label">Business Entity type</label>
-              </div>
-							<div class="col-md-6">
-								<select class="form-control">
-                  <option>--Select business entity--</option>
-                </select>
-							</div>
-              <div class="col-md-6">
-								<select class="form-control">
-                  <option>--Select business entity--</option>
-                </select>
-							</div>
-						</div>
-            
-          </div>
-          
-          <div class="form-group">
-              <div class="col-md-12 text-center">
-                <button class="btn-custom-7" type="button">Cancel</button> <button class="btn-custom-6" type="button">Submit</button>
-              </div>
-						</div>
-            
+					</div>
+
           </div>
         </form>
 			</div>

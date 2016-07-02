@@ -20,42 +20,20 @@ li {
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
-
-
-/* except below bootstrap elements */
-
 .img-circle {
     border-radius: 50% !important;
 }
-
 .img-rounded {
     border-radius: 6px !important;
 }
-
-
-/***
-General reset
-***/
-
-
-/* Set default body */
-
 body {
-    color: #333333;
+    color: #222222;
     font-family: "Open Sans", sans-serif;
     padding: 0px !important;
     margin: 0px !important;
     direction: "ltr";
     font-size: 14px;
 }
-
-
-/*
- Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
- properly apply the media queries in Bootstrap's CSS. To address this, 
- you can optionally include the following CSS and JavaScript to work around this problem until Microsoft issues a fix.
-*/
-
 @-webkit-viewport {
     width: device-width;
 }
@@ -75,12 +53,6 @@ body {
 @viewport {
     width: device-width;
 }
-
-
-/*
- Internet Explorer 10 doesn't differentiate device width from viewport width, 
- and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied 
-*/
 
 @-ms-viewport {
     width: auto !important;
@@ -2141,7 +2113,7 @@ Simple Line Icons Demo
 }
 
 
-/*** 
+/***
 Glyphicons Demo
 ***/
 
@@ -2324,7 +2296,7 @@ Custom buttons based on bootstrap SASS
 
 
 /***
-Custom color buttons 
+Custom color buttons
 ***/
 
 .btn.white:not(.btn-outline) {
@@ -7586,7 +7558,7 @@ Chats
 
 
 /***
-Customized Bootstrap Close Icon 
+Customized Bootstrap Close Icon
 ***/
 
 .close {
@@ -8173,7 +8145,6 @@ Form Layouts
     margin-bottom: 0px !important;
 }
 
-
 /* Control Label */
 
 .control-label {
@@ -8194,7 +8165,7 @@ Form Layouts
 
 .portlet-form .form-body,
 .form .form-body {
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .portlet.light .portlet-form .form-body,
@@ -8511,7 +8482,7 @@ Forms
 
 
 /***
-Custom color buttons 
+Custom color buttons
 ***/
 
 .form-control.white {
@@ -10015,7 +9986,7 @@ Metro icons
 
 
 /***
-Customized Bootstrap Modal 
+Customized Bootstrap Modal
 ***/
 
 .modal {
@@ -10941,7 +10912,7 @@ Portlets
 
 
 /***
-Custom colored portlets 
+Custom colored portlets
 ***/
 
 .portlet > .portlet-body.white,
@@ -18402,7 +18373,7 @@ Light Table
 
 
 /***
-Customized Bootstrap Tabs 
+Customized Bootstrap Tabs
 ***/
 
 
@@ -18410,7 +18381,7 @@ Customized Bootstrap Tabs
 
 .nav-tabs,
 .nav-pills {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .nav-tabs > li > a,
@@ -20049,7 +20020,7 @@ AngularJS Basic Animations
 
 
 /***
-Timeline 
+Timeline
 ***/
 
 .timeline {
@@ -20252,7 +20223,7 @@ Timeline
 
 
 /***
-Tasks Widget 
+Tasks Widget
 ***/
 
 .tasks-widget:after {
@@ -26832,7 +26803,7 @@ Tasks Widget
 
 
 /***
-Custom color buttons 
+Custom color buttons
 ***/
 
 .bg-white {
