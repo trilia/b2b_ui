@@ -6,7 +6,7 @@ body {
 	font-weight: 400;
 }
 .nopadding { padding: 0px; }
-.nomargin { margin: 0px; }
+.nomargin { margin: 0px !important; }
 .mb25 { margin-bottom: 20px; }
 ::-webkit-input-placeholder { color:#666666!important }
 ::-moz-placeholder { color:#666666!important }
@@ -864,12 +864,8 @@ Horizontal Menu
 
 @media (max-width: 767px) {
 	/* 767px */
-	/* Page header */
 	.page-header.navbar {
 		padding: 0 10px 0 10px;
-		/* Header logo */
-		/* Search box */
-		/* Top navigation menu*/
 	}
 	.page-header.navbar .page-logo {
 		width: auto;
@@ -903,6 +899,8 @@ Horizontal Menu
 	.page-header.navbar .top-menu .navbar-nav > li.dropdown-tasks .dropdown-menu:before {
 		margin-right: 110px;
 	}
+	.form-horizontal .control-label { text-align: left !important; }
+	.btn-custom-7, .btn-custom-6, .btn-circle-but { width: 100% !important; margin: 0px 0px 15px 0px !important; }
 }
 
 @media (max-width: 580px) {
@@ -3204,7 +3202,7 @@ Page Loading
 	margin-left: 42px !important;
 }
 .ng-isolate-scope .nav-tabs > li { margin-right: 5px; text-align: center; }
-.btn-custom-3 { padding: 8px 16px; }
+.btn-custom-3 { padding: 10px 16px; }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -3300,6 +3298,7 @@ iuput::place-holder { color: red; }
 	font-size: 14px !important;
 	border-color: #ACA8A3 !important;
 	font-weight: bold;
+	border-radius: 0px;
 }
 
 .btn-custom-2 {
@@ -3308,6 +3307,7 @@ iuput::place-holder { color: red; }
 	font-size: 14px !important;
 	border-color: #ACA8A3 !important;
 	font-weight: bold;
+	border-radius: 0px;
 }
 
 .btn-custom-3 {
@@ -3316,6 +3316,7 @@ iuput::place-holder { color: red; }
 	border-color: #aaaaaa !important;
 	color: #666666 !important;
 	font-size: 14px !important;
+	margin-right: 10px;
 }
 
 .btn-custom-4 {
@@ -3327,39 +3328,41 @@ iuput::place-holder { color: red; }
 }
 
 .btn-custom-5 {
-	background-color: #f3f3f3 !important;
+	background-color: #f4f7f9 !important;
 	border-color: #aaaaaa !important;
 	color: #666666 !important;
 	font-size: 14px !important;
+	border-radius: 0px;
 }
 
 .btn-custom-6 {
 	background-color: #00a6de !important;
-	color: #FFFFFF !important;
-	font-size: 18px !important;
-	font-weight: 600;
-	border-color: #ACA8A3 !important;
-	width: 230px !important;
-	height: 47px !important;
-	border-radius: 5px !important;
-	border-radius: 5px !important;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
-	border: none !important;
-	margin: 0px 7.5px;
-}
-
-.btn-custom-7 {
-	background-color: #FFFFFF !important;
-	color: #333333 !important;
+	color: #FFFFFF;
 	font-size: 14px !important;
 	font-weight: 600;
 	border-color: #ACA8A3 !important;
-	width: 230px !important;
-	height: 47px !important;
-	border-radius: 5px !important;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.5) !important;
-	border: 2px solid #999999 !important;
-	margin: 0px 7.5px;
+	width: 230px;
+	height: 40px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	border: none !important;
+	margin: 0px 15px 15px 15px;
+}
+
+.addButton { border-radius: 0px !important; box-shadow: none !important; border: 1px solid #999999 !important; color: #666666 !important; font-weight: 400 !important; margin-top: 10px !important; }
+[ng-show="frmBank"] .addButton { width: 48%; }
+
+.btn-custom-7 {
+	background-color: #FFFFFF !important;
+	color: #333333;
+	font-size: 14px !important;
+	font-weight: 600;
+	width: 230px;
+	height: 40px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+	border: 2px solid #999999;
+	margin: 0px 15px 15px 15px;
 }
 
 .btn-custom-8 {
@@ -3417,4 +3420,10 @@ div.orgChart div.node {}
 #orgChartContainer .node h2 span {
 	color: #D3D0CB !important;
 	font-size: 12px;
+}
+.fa-plus {
+	color: #fff;
+	background: #a3a3a3;
+	border-radius: 50% !important;
+	padding: 5px 6.5px 5px 6.5px;
 }

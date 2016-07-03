@@ -1,21 +1,4 @@
-div,
-svg,
-input,
-select,
-textarea,
-span,
-img,
-table,
-label,
-td,
-th,
-p,
-a,
-button,
-ul,
-code,
-pre,
-li {
+div,svg,input,select,textarea,span,img,table,label,td,th,p,a,ul,code,pre,li {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
@@ -2283,7 +2266,6 @@ Custom buttons based on bootstrap SASS
 
 .btn {
     outline: none !important;
-    box-shadow: none !important;
 }
 
 .btn:hover {
@@ -7582,8 +7564,7 @@ Dropdown Menu
 ***/
 /*rtl:ignore*/
 .dropdown-menu {
-    left: 0/*rtl:auto*/
-    ;
+    left: 0/*rtl:auto*/;
     min-width: 175px;
     position: absolute;
     z-index: 1000;
@@ -7593,7 +7574,7 @@ Dropdown Menu
     text-shadow: none;
     padding: 0px;
     background-color: #ffffff;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border: 1px solid #eee;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-border-radius: 4px;
@@ -8165,7 +8146,7 @@ Form Layouts
 
 .portlet-form .form-body,
 .form .form-body {
-    padding: 20px 0px;
+    padding: 20px 15px;
 }
 
 .portlet.light .portlet-form .form-body,

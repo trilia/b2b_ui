@@ -1,5 +1,5 @@
 <div class="row" ng-hide="frmBank">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-lg-6 nopadding">
 		<!-- Begin: life time stats -->
 			<div class="portlet-body form">
 				<form action="#" class="form-horizontal">
@@ -9,31 +9,31 @@
                 <button class="btn btn-custom-3 btn-lg" type="button" ng-click="loadForm('frmBank')"><i class="fa fa-pencil"></i> Edit</button>
 							</div>
 						</div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
                 <label class="control-label">Bank Name | HDFC Bank</label>
 							</div>
 						</div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
                 <label class="control-label">Branch Name | Kanpur</label>
 							</div>
 						</div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
                 <label class="control-label">Account Number | 111111</label>
               </div>
             </div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
                 <label class="control-label">IFSC Code | 000000</label>
               </div>
             </div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
                 Digital Signature | <button type="button" class="btn btn-custom-4 btn-lg"><span class="glyphicon glyphicon-eye-open"> </span></button> <button type="button" class="btn btn-custom-4 btn-lg"><i class="fa fa-download"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SSL Certificate | <button type="button" class="btn btn-custom-4 btn-lg"><span class="glyphicon glyphicon-eye-open"> </span></button> <button type="button" class="btn btn-custom-4 btn-lg"><i class="fa fa-download"></i></button>
@@ -48,9 +48,9 @@
 </div>
 
 <div class="row" ng-show="frmBank">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-lg-6 nopadding">
 		<!-- Begin: life time stats -->
-			<form action="#" class="form-horizontal">
+			<form action="#" class="form-horizontal form">
           <div class="form-body">
             <div class="form-group">
               <div class="col-md-12">
@@ -60,7 +60,7 @@
 								<input class="form-control" id="mask_date" type="text" placeholder="Add bank name" />
 							</div>
 						</div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
 							<label class="control-label">Branch Name</label>
@@ -69,7 +69,7 @@
 								<input class="form-control" id="mask_date" type="text" placeholder="Add branch name" />
 							</div>
 						</div>
-            
+
             <div class="form-group">
               <div class="col-md-12">
 							<label class="control-label">Account Number</label>
@@ -78,32 +78,27 @@
 								<input class="form-control" id="mask_date" type="text" placeholder="Add account number" />
 							</div>
 						</div>
-            
-            <div class="form-group">
-              <div class="col-md-12">
-							<label class="control-label">IFSC Code</label>
-              </div>
+
+						<div class="form-group">
+							<div class="col-md-12">
+								<label class="control-label">IFSC Code</label>
+							</div>
 							<div class="col-md-12">
 								<input class="form-control" id="mask_date" type="text" placeholder="Add IFSC code" />
 							</div>
 						</div>
-            
-          </div>
-          
-          <div class="form-group">
-              <div class="col-md-12 text-left">
-                <button class="btn btn-default btn-circle-but" type="button"><span class="icon-plus" aria-hidden="true"></span> Add digital signature</button>
-                <button class="btn btn-default btn-circle-but" type="button"><span class="icon-plus" aria-hidden="true"></span> Add SSL certificate</button>
-              </div>
-          </div>
-          
-          <div class="form-group">
-              <div class="col-md-12 text-left">
-                <button class="btn-custom-7" type="button">Cancel</button>
-                <button class="btn-custom-6" type="button">Save</button>
-              </div>
+						<div class="form-group">
+	              <div class="col-md-12 text-left">
+									<button type="button" class="btn btn-custom-7 nomargin addButton"><i class="fa fa-plus"></i> Add digital signature</button>
+									<button type="button" class="btn btn-custom-7 nomargin addButton pull-right"><i class="fa fa-plus"></i> Add SSL certificate</button>
+	              </div>
+	          </div>
           </div>
         </form>
+			</div>
+			<div class="col-xs-12 text-center">
+				<button class="btn-custom-7" type="button">Cancel</button>
+				<button class="btn-custom-6" type="button">Save</button>
 			</div>
 		</div>
 		<!-- End: life time stats -->
