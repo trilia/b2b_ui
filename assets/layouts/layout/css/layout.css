@@ -5,9 +5,8 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 }
-.nopadding { padding: 0px; }
-.nomargin { margin: 0px !important; }
 .mb25 { margin-bottom: 20px; }
+.mb10 { margin-bottom: 10px; }
 ::-webkit-input-placeholder { color:#666666!important }
 ::-moz-placeholder { color:#666666!important }
 :-ms-input-placeholder { color:#666666!important }
@@ -911,6 +910,9 @@ Horizontal Menu
 	.page-header.navbar .top-menu .navbar-nav > li.dropdown-language .dropdown-toggle .langname {
 		display: none;
 	}
+	.ng-isolate-scope .nav-tabs > li { width: 50%; margin-right: 0px !important; }
+	.ng-isolate-scope .nav-tabs > li > a { margin-right: 0px !important; }
+	.nav-tabs, .nav-pills { margin-bottom: 0px; }
 }
 
 @media (max-width: 480px) {
@@ -937,13 +939,23 @@ Horizontal Menu
 	.page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle {
 		padding: 4px 0px 7px 2px;
 	}
+	.page-header-fixed .pace .pace-progress {
+		top: 92px;
+	}
+	.page-header-fixed .pace .pace-activity {
+		top: 96px;
+	}
+	.page-header-fixed.page-header-fixed-mobile .page-container {
+		margin-top: 92px !important;
+	}
 }
-
-
+@media (max-width: 360px) {
+	.ng-isolate-scope .nav-tabs > li { width: 100%; margin-right: 0px !important; }
+	.ng-isolate-scope .nav-tabs > li > a { margin-right: 0px; }
+}
 /***
 Pace - Page Progress
 ***/
-
 .pace .pace-progress {
 	z-index: 10005;
 	top: 46px;
@@ -965,22 +977,9 @@ Pace - Page Progress
 	right: 20px;
 	border-radius: 10px !important;
 }
-
-@media (max-width: 480px) {
-	/* 480px */
-	.page-header-fixed .pace .pace-progress {
-		top: 92px;
-	}
-	.page-header-fixed .pace .pace-activity {
-		top: 96px;
-	}
-}
-
-
 /***
 Page container
 ***/
-
 .page-container {
 	margin: 0px;
 	padding: 0px;
@@ -1025,14 +1024,6 @@ Page container
 		margin-top: 46px !important;
 	}
 }
-
-@media (max-width: 480px) {
-	/* Page container */
-	.page-header-fixed.page-header-fixed-mobile .page-container {
-		margin-top: 92px !important;
-	}
-}
-
 
 /***
 Page sidebar
@@ -1901,7 +1892,7 @@ Page content
 	margin: 10px 0px 44px 0px;
 	font-size: 24px;
 	text-transform: uppercase;
-	text-indent: -2px;
+	text-indent: -1px;
 }
 
 
@@ -3281,7 +3272,7 @@ iuput::place-holder { color: red; }
 .table > thead > tr > td {
 	border: none;
 }
-
+.table > tbody > tr > td > a { font-weight: 600; text-decoration: underline; }
 .table > tbody > tr > th,
 .table > thead > tr > th {
 	border-top: none;
@@ -3317,6 +3308,7 @@ iuput::place-holder { color: red; }
 	color: #666666 !important;
 	font-size: 14px !important;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 .btn-custom-4 {
