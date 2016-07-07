@@ -5,7 +5,7 @@ TriliaApp.directive('orgChart', ['$rootScope', '$compile',
         replace: true,
         link: function (scope, element, attrs) {
           console.log('here in chart');
-          var html = '<div id="orgChartContainer"><div id="orgChart"></div></div><div id="consoleOutput"></div>';
+          var html = '<div class="col-xs-12 nopadding" id="orgChartContainer"><div id="orgChart"></div></div><div id="consoleOutput"></div>';
           var el = $compile(html)(scope);
           element.append(el);
           var testData = [{id: 1, name: 'Trilia', parent: 0},
@@ -22,13 +22,13 @@ TriliaApp.directive('orgChart', ['$rootScope', '$compile',
               data: testData,
               showControls: true,
               allowEdit: true,
-              onAddNode: function(node){ 
+              onAddNode: function(node){
                   log('Created new node on node '+node.data.id);
-                  org_chart.newNode(node.data.id); 
+                  org_chart.newNode(node.data.id);
               },
               onDeleteNode: function(node){
                   log('Deleted node '+node.data.id);
-                  org_chart.deleteNode(node.data.id); 
+                  org_chart.deleteNode(node.data.id);
               },
               onClickNode: function(node){
                   log('Clicked node '+node.data.id);
