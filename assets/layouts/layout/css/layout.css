@@ -542,8 +542,6 @@ Page Header
 	background: none !important;
 	border: none !important;
 }
-
-
 /* Allow expanded search for above 768px */
 
 @media (min-width: 768px) {
@@ -1011,7 +1009,7 @@ Page container
 	.page-footer-fixed .page-container {
 		margin-bottom: 20px !important;
 	}
-	.ng-isolate-scope .nav-tabs > li { width: 190px; }
+	.ng-isolate-scope .nav-tabs > li { min-width: 190px; }
 }
 
 @media (max-width: 991px) {
@@ -3207,17 +3205,38 @@ Page Loading
 	font-size: 14px!important;
 	color: #222222!important;
 }
-
-.productImages ul li {
-	width: 110px;
-	float: left;
-	list-style: none;
-}
-
 .productImages ul {
 	padding: 0px;
+	float: left;
 }
-
+.productImages ul li {
+	width: 110px;
+	height: 131px;
+	float: left;
+	list-style: none;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.productImages ul li:last-child a {
+	background: #fcfcfc;
+	color: #666666;
+	text-decoration: none;
+	padding: 40px 0px;
+	font-size: 14px;
+}
+.productImages ul li:last-child a span {
+	display: block;
+}
+.productImages ul li a {
+	display: block;
+	border: solid 1px #aaaaaa;
+	text-align: center;
+	height: 100%;
+	overflow: hidden;
+}
+.productImages ul li a:hover {
+	border: solid 1px #00a6de;
+}
 .btn-circle-but {
 	border-radius: 5px !important;
 }

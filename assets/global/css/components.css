@@ -10338,9 +10338,7 @@ Portlets
 }
 
 .portlet > .portlet-title {
-    border-bottom: 1px solid #eee;
     padding: 0;
-    margin-bottom: 10px;
     min-height: 41px;
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
@@ -10364,7 +10362,6 @@ Portlets
     display: inline-block;
     font-size: 18px;
     line-height: 18px;
-    padding: 10px 0;
 }
 
 .portlet > .portlet-title > .caption.bold {
@@ -10688,7 +10685,6 @@ Portlets
 /* Light Portlet */
 
 .portlet.light {
-    padding: 12px 20px 15px 20px;
     background-color: #fff;
 }
 
@@ -10711,7 +10707,6 @@ Portlets
 
 .portlet.light > .portlet-title > .caption {
     color: #666;
-    padding: 10px 0;
 }
 
 .portlet.light > .portlet-title > .caption > .caption-subject {
