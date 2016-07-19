@@ -39,7 +39,7 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
     }];
     
     $scope.btabs = [{
-        title: 'BANK INFORMATION',
+        title: 'BUSINESS INFORMATION',
         template: '/views/setup/partial/merchant-info.html',
         disabled: true
     },

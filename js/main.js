@@ -342,7 +342,7 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
 
 			
 			
-			.state("add-collection", {
+	.state("add-collection", {
           url: "/add-collection",
           templateUrl: "views/products/add_collection.html",
           data: {pageTitle: 'Collection'},
@@ -510,6 +510,26 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
       .state("orders.calendar-view", {
           url: "/calendar-view",
           templateUrl: "views/orders/calendar-view.html",
+          data: {pageTitle: 'Order Processing Calendar View'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      '/assets/global/plugins/fullcalendar/fullcalendar.min.css',
+                      '/assets/global/plugins/fullcalendar/lib/moment.min.js',
+                      '/assets/global/plugins/fullcalendar/fullcalendar.min.js',
+                      'js/ngCalendar.js'
+                  ]
+              });
+            }]
+          }
+      })
+	  
+	  .state("orders.calendar-list", {
+          url: "/calendar-list",
+          templateUrl: "views/orders/calendar-list.html",
           data: {pageTitle: 'Order Processing Calendar View'},
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
@@ -870,7 +890,23 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           }
       })
       
-      
+      .state("setup.employee-Invite", {
+          url: "/employee-Invite",
+          templateUrl: "views/setup/invite_employees.html",
+          data: {pageTitle: 'Invite Employee'},
+          controller: "EmployeeController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/EmployeeController.js'
+                  ]
+              });
+            }]
+          }
+      })
 
       .state("setup.employees-add", {
           url: "/employees-add",
@@ -1543,6 +1579,23 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
       .state("access.data-entry", {
           url: "/data-entry",
           templateUrl: "views/access/data-entry.html",
+          data: {pageTitle: 'Data Entry'},
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',  
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/CustomerCareController.js'
+                  ]
+              });
+            }]
+          }
+      })
+	  
+	  .state("warehouse.data-entry", {
+          url: "/data-entry",
+          templateUrl: "views/warehouse/data-entry.html",
           data: {pageTitle: 'Data Entry'},
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
