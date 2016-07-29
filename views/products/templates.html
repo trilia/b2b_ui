@@ -1,125 +1,132 @@
 <div class="page-bar">
-  <ul class="page-breadcrumb">
-      <li>
-          <a href="#">Product Management</a>
-          <i class="fa fa-angle-right"></i>
-      </li>
-      <li>
-          <a href="#">Templates</a>
-      </li>
-  </ul>
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="#">Product Management</a>
+            <i class="fa fa-angle-right"></i>
+        </li>
+        <li>
+            <a href="#">Templates</a>
+        </li>
+    </ul>
 </div>
 
 <div class="row">
-	<div class="col-md-6">
-    <h3 class="page-title"> TEMPLATES</h3>
-  </div>
-
-  <div class="col-md-6 text-right">
-    <div class="btn-group btn-group-solid">
-        <button class="btn btn-custom-1 page-title-group" type="button">
-            <i class="fa fa-list"></i> List View</button>
-        <button class="btn btn-custom-2 page-title-group" type="button"  ng-click="load('chart')">
-            <i class="fa fa-cogs"></i> Chart View</button>
+    <div class="col-md-6">
+        <h3 class="page-title"> TEMPLATES</h3>
     </div>
-  </div>
+
+    <div class="col-md-6 text-right hide">
+        <div class="btn-group btn-group-solid">
+            <button class="btn btn-custom-1 page-title-group" type="button">
+                <i class="fa fa-list"></i> List View</button>
+            <button class="btn btn-custom-2 page-title-group" type="button" ng-click="load('chart')">
+                <i class="fa fa-cogs"></i> Chart View</button>
+        </div>
+    </div>
 </div>
 
 <div class="row">
-	<div class="col-md-5 mb10">
-    <div class="input-group">
-      <div class="input-group-btn">
-          <button type="button" class="btn dropdown-toggle btn-lg btn-custom-5" data-toggle="dropdown">Action
-              <i class="fa fa-angle-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-              <li>
-                  <a href="javascript:;"> Action </a>
-              </li>
-              <li>
-                  <a href="javascript:;"> Another action </a>
-              </li>
-              <li>
-                  <a href="javascript:;"> Something else here </a>
-              </li>
-              <li class="divider"> </li>
-              <li>
-                  <a href="javascript:;"> Separated link </a>
-              </li>
-          </ul>
-      </div>
-      <!-- /btn-group -->
-      <div class="input-icon input-icon-lg">
-        <i class="fa fa-search"></i>
-        <input type="text" class="form-control custom-input-lg" placeholder="Search for products">
-      </div>
+    <div class="col-md-5 mb10">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn dropdown-toggle btn-lg btn-custom-5" data-toggle="dropdown">Action
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="javascript:;"> Action </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"> Another action </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"> Something else here </a>
+                    </li>
+                    <li class="divider"> </li>
+                    <li>
+                        <a href="javascript:;"> Separated link </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="input-icon input-icon-lg">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control custom-input-lg" placeholder="Search for products">
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-md-5">
-    <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-trash"></i> Discard</button>
-    <button type="button" class="btn btn-custom-3 btn-lg" ng-click="load('add-employee')">+ Add Template From Repository</button>
-  </div>
-
-  <div class="col-md-2 text-right">
-    <button type="button" class="btn btn-custom-4 btn-lg" popover="Download" popover-trigger="mouseenter"><i class="fa fa-download"></i></button>
-    <button type="button" class="btn btn-custom-4 btn-lg" popover="Print" popover-trigger="mouseenter"><i class="fa fa-print"></i></button>
-  </div>
+    <div class="col-md-7 col-xs-12">
+        <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-trash"></i> Discard</button>
+        <button type="button" class="btn btn-custom-3 btn-lg" ng-click="load('add-employee')"><i class="fa fa-folder" aria-hidden="true"></i> Add Template From Repository</button>
+        <!-- // -->
+        <button type="button" class="btn btn-custom-4 btn-lg pull-right" popover="Print" popover-trigger="mouseenter"><i class="fa fa-print"></i></button>
+        <button type="button" class="btn btn-custom-4 btn-lg pull-right" popover="Download" popover-trigger="mouseenter"><i class="fa fa-download"></i></button>
+        <!-- // -->
+    </div>
 </div>
 
 <div class="row margin-top-10">
-	<div class="col-md-12">
-    <div class="table-responsive">
-     <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th><input type="checkbox" class="group-checkable"></th>
-            <th>NAME</th>
-            <th>CATEGORY USED IN</th>
-            <th>STATUS</th>
-            <th>LAST EDIT DATE</th>
-            <th>LAST EDITED BY</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" class="group-checkable">
+                        </th>
+                        <th>NAME</th>
+                        <th>CATEGORY USED IN</th>
+                        <th>STATUS</th>
+                        <th>LAST EDIT DATE</th>
+                        <th>LAST EDITED BY</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
 
-        <tbody>
-          <tr>
-            <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="#">Electronics Template</a> <i class="fa fa-angle-down"></i></td>
-            <td>Sportswear <i class="fa fa-angle-down"></i></td>
-            <td>Approval pending by PCM</td>
-            <td>24/08/15</td>
-            <td>Deepak</td>
-            <td>Active</td>
-            <td>Deactive</td>
-          </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="group-checkable">
+                        </td>
+                        <td><a href="#">Electronics Template</a> <i class="fa fa-angle-down"></i></td>
+                        <td>Sportswear <i class="fa fa-angle-down"></i></td>
+                        <td>Approval pending by PCM</td>
+                        <td>24/08/15</td>
+                        <td>Deepak</td>
+                        <td>Active</td>
+                        <td>Deactive</td>
+                    </tr>
 
-          <tr>
-            <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="#">Smartphone Template</a></td>
-            <td>Eyewear <i class="fa fa-angle-down"></i></td>
-            <td>Being edited by Prakash</td>
-            <td>19/08/15</td>
-            <td>Prakash</td>
-            <td>Active</td>
-            <td>Deactive</td>
-          </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="group-checkable">
+                        </td>
+                        <td><a href="#">Smartphone Template</a></td>
+                        <td>Eyewear <i class="fa fa-angle-down"></i></td>
+                        <td>Being edited by Prakash</td>
+                        <td>19/08/15</td>
+                        <td>Prakash</td>
+                        <td>Active</td>
+                        <td>Deactive</td>
+                    </tr>
 
-          <tr>
-            <td><input type="checkbox" class="group-checkable"></td>
-            <td><a href="#">Smartphone Template edit</a></td>
-            <td>Eyewear <i class="fa fa-angle-down"></i></td>
-            <td>Approved</td>
-            <td>10/08/15</td>
-            <td>Daniel</td>
-            <td>Active</td>
-            <td>Deactive</td>
-          </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="group-checkable">
+                        </td>
+                        <td><a href="#">Smartphone Template edit</a></td>
+                        <td>Eyewear <i class="fa fa-angle-down"></i></td>
+                        <td>Approved</td>
+                        <td>10/08/15</td>
+                        <td>Daniel</td>
+                        <td>Active</td>
+                        <td>Deactive</td>
+                    </tr>
 
-        </tbody>
-      </table>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
 </div>

@@ -2876,6 +2876,7 @@ iuput::place-holder {
     border-color: #aaaaaa !important;
     color: #666666 !important;
     font-size: 13px !important;
+    margin-left: 5px;
 }
 .btn-custom-5 {
     background-color: #f4f7f9 !important;
@@ -3007,4 +3008,12 @@ input, select, textarea {
     margin: 0px;
     width: 100%;
     font-size: 18px !important;
+}
+/* Add Roles Locations*/
+.addroles_locations {
+  margin-bottom: 15px;
+}
+[data-plus] {
+  font-weight: 700;
+  font-size: 15px;
 }
