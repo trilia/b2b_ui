@@ -793,9 +793,9 @@ Horizontal Menu
         width: 100% !important;
         margin: 0px 0px 15px 0px !important;
     }
-		[data-collection] select {
-			margin-bottom: 15px;
-		}
+    [data-collection] select {
+        margin-bottom: 15px;
+    }
 }
 @media (max-width: 580px) {
     /* Page header */
@@ -1761,6 +1761,7 @@ Page content
     margin-top: 0px;
     padding: 0px;
     background-color: #fff;
+    position: relative;
 }
 .page-container-bg-solid .page-content {
     background: #FFFFFF;
@@ -2904,10 +2905,10 @@ iuput::place-holder {
     border: 1px solid #999999 !important;
     color: #666666 !important;
     font-weight: 400 !important;
-		margin: 0px 0px 15px 0px !important;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
+    margin: 0px 0px 15px 0px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 [ng-show="frmBank"] .addButton {
     width: 48%;
@@ -3009,11 +3010,140 @@ input, select, textarea {
     width: 100%;
     font-size: 18px !important;
 }
+
 /* Add Roles Locations*/
+
 .addroles_locations {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 [data-plus] {
-  font-weight: 700;
-  font-size: 15px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Pagination Start */
+
+[data-paging] {
+    padding: 0px;
+    margin: auto;
+    width: 150px;
+    list-style: none;
+}
+[data-paging] li {
+    display: inline-block;
+    font-size: 14px;
+}
+[data-paging] li a {
+    color: #000;
+}
+[data-paging] li span:first-child {
+    border: solid 1px #afadad;
+    padding: 0px 6px;
+    font-weight: 600;
+}
+[data-paging] li:first-child, [data-paging] li:last-child {
+    font-size: 18px;
+}
+
+/* Page Count */
+
+ul[page-count] {
+    width: auto;
+    float: right;
+    list-style: none;
+    padding: 0px;
+    margin: -24px 0px 0px 0px;
+}
+ul[page-count] li {
+    display: inline-block;
+    font-size: 14px;
+}
+ul[page-count] li:first-child {
+    color: #000;
+}
+ul[page-count] li:last-child {
+    color: #999;
+}
+
+/* Table test center */
+
+[text-center] {
+    text-align: center;
+}
+[text-center] .active {
+    border: solid 1px #00a6de !important;
+    padding: 3px 9px;
+}
+
+/* Data Overlay */
+
+[data-overlay] {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9;
+}
+[data-overlay] .popcontainer {
+  position: absolute;
+  width: 80%;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin: auto;
+  background: #fff;
+}
+.popheading {
+  padding: 10px 0px;
+}
+.popheading ul {
+  list-style: none;
+  padding: 0px;
+}
+.popheading ul li {
+  float: left;
+  margin-right: 5px;
+}
+.popheading ul li span {
+  color: #999;
+  float: left;
+  margin-top: 5px;
+  line-height: 15px;
+  font-size: 13px;
+}
+.popheading ul li span.or {
+  margin-top: 11px;
+}
+.customButtom {
+  border: solid 1px #00A6DE;
+  background-color: #fff;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.popcontantbox {
+  padding: 5px 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.popcontantbox > ul {
+  list-style: none;
+  padding: 0px;
+  float: left;
+  width: 1000px;
+}
+.popcontantbox > ul > li {
+  float: left;
+  width: 200px;
+}
+.popcontantbox > ul > li >ul {
+  padding: 0px;
+  list-style: none;
+}
+.popcontantbox > ul > li > ul > li > a{
+  color: #666;
+  font-size: 13px;
+}
+.radioButtonContainer .radio {
+  padding-top: 1px;
 }
