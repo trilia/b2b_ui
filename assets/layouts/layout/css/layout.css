@@ -3147,3 +3147,22 @@ ul[page-count] li:last-child {
 .radioButtonContainer .radio {
   padding-top: 1px;
 }
+/* Employee Details Page */
+.employee_details {
+  margin-bottom: 15px;
+}
+.employee_details .call-con {
+  border: solid 1px #c5bfbf;
+  padding: 5px 10px;
+  border-radius: 5px !important;
+  background-color: #ededed;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.outline {
+  border: solid 1px #c5bfbf;
+  padding: 2px 5px;
+}
+.inventory_container {
+  margin-bottom: 15px;
+}

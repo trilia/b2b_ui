@@ -6,6 +6,7 @@
       </li>
       <li>
           <a href="#">Categories</a>
+          <i class="fa fa-angle-right"></i>
       </li>
       <li>
           <a href="#">Clothes</a>
@@ -14,17 +15,16 @@
 </div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-8">
     <h3 class="page-title"> CLOTHES</h3>
   </div>
-  
 </div>
 
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-5 col-xs-12 mb10">
     <div class="input-group">
       <div class="input-group-btn">
-          <button type="button" class="btn dropdown-toggle btn-lg" data-toggle="dropdown">Filter
+          <button type="button" class="btn dropdown-toggle btn-lg btn-custom-5" data-toggle="dropdown">Action
               <i class="fa fa-angle-down"></i>
           </button>
           <ul class="dropdown-menu">
@@ -46,21 +46,19 @@
       <!-- /btn-group -->
       <div class="input-icon input-icon-lg">
         <i class="fa fa-search"></i>
-        <input type="text" class="form-control input-lg" placeholder="Search for products">
+        <input type="text" class="form-control custom-input-lg" placeholder="Search for products">
       </div>
     </div>
   </div>
-  
-  <div class="col-md-3">
-    <button type="button" class="btn btn-default btn-lg btn-circle-but">+ Product</button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button">Import</button>
-  </div>
-  
-  <div class="col-md-3 text-right">
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-slack"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-eye-slash"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-refresh"></i></button>
-    <button class="btn btn-default btn-lg btn-circle-but" type="button"><i class="fa fa-print"></i></button>
+  <div class="col-md-7 col-xs-12">
+    <button type="button" class="btn btn-custom-3 btn-lg"><span data-plus>+</span> Product</button>
+    <button class="btn btn-custom-3 btn-lg" type="button"><i class="fa fa-upload" aria-hidden="true"></i> Import</button>
+    <!-- // -->
+    <button class="btn btn-custom-4 btn-lg pull-right" type="button"><i class="fa fa-print"></i></button>
+    <button class="btn btn-custom-4 btn-lg pull-right" type="button"><i class="fa fa-refresh"></i></button>
+    <button class="btn btn-custom-4 btn-lg pull-right" type="button"><i class="fa fa-eye-slash"></i></button>
+    <button class="btn btn-custom-4 btn-lg pull-right" type="button"><i class="fa fa-slack"></i></button>
+    <!-- // -->
   </div>
 </div>
 
@@ -77,7 +75,7 @@
             <th>SKU</th>
           </tr>
         </thead>
-        
+
         <tbody>
           <tr>
             <td><i class="fa fa-angle-right"></i></td>
@@ -86,7 +84,7 @@
             <td>Speedo</td>
             <td>92823124512</td>
           </tr>
-          
+
           <tr>
             <td><i class="fa fa-angle-down"></i></td>
             <td><a href="#">Ray Ban Glasses</a></td>
@@ -122,44 +120,21 @@
             <td>Nike</td>
             <td>92823123454</td>
           </tr>
-          
-          <tr>
-            <td></td>
-            <td><a href="#">Red Size 41</a></td>
-            <td></td>
-            <td></td>
-            <td>92823112345-1234</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Black & Blue Size 40</a></td>
-            <td></td>
-            <td></td>
-            <td>92823112351-1232</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Purple & black Size 383</a></td>
-            <td></td>
-            <td></td>
-            <td>92823134561-7895</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Red Size 40</a></td>
-            <td></td>
-            <td></td>
-            <td>92823156742-7541</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Red Size 38</a></td>
-            <td></td>
-            <td></td>
-            <td>92823112361-9874</td>
-          </tr>
         </tbody>
       </table>
+      <!-- //  Paginationa Start -->
+      <div class="col-xs-12 nopadding paginationContainer">
+        <ul data-paging>
+          <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+          <li>Page <span>1</span> of <span>13</span></li>
+          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+        </ul>
+        <ul page-count>
+          <li><span>1</span>-<span>10</span></li>
+          <li>of <span>125</span></li>
+        </ul>
+      </div>
+      <!-- //  Paginationa End -->
     </div>
   </div>
 </div>

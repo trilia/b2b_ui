@@ -71,10 +71,10 @@ td, th {
   /*
   Label the data
   */
-  [employee-responsive-table] td:nth-of-type(1):before { content: "NAME"; }
-  [employee-responsive-table] td:nth-of-type(2):before { content: "DESIGNATION"; }
-  [employee-responsive-table] td:nth-of-type(3):before { content: "EMPLOYEE ID"; }
-  [employee-responsive-table] td:nth-of-type(4):before { content: "ACCESS"; }
-  [employee-responsive-table] td:nth-of-type(5):before { content: "REPORTING MANAGER"; }
-  [employee-responsive-table] td:nth-of-type(6):before { content: "LAST LOGGED IN"; }
+  [employee-responsive-table] td:nth-of-type(1):before { content: attr(data-name); }
+  [employee-responsive-table] td:nth-of-type(2):before { content: attr(data-name); }
+  [employee-responsive-table] td:nth-of-type(3):before { content: attr(data-name); }
+  [employee-responsive-table] td:nth-of-type(4):before { content: attr(data-name); }
+  [employee-responsive-table] td:nth-of-type(5):before { content: attr(data-name); }
+  [employee-responsive-table] td:nth-of-type(6):before { content: attr(data-name); }
 }
