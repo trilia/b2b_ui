@@ -12,33 +12,31 @@
 </div>
 
 <h3 class="page-title"> Dashboard </h3>
-
 <div class="row">
-  <div class="col-md-6 col-sm-6">
-    <div style="padding:5px;" class="portlet">
-      <div class="col-md-12 col-sm-12 trilia-bg-color">
-        <strong>EXPECTED ORDER FULFILLMENT</strong>
+  <div class="col-xs-12 dashboard_container">
+    <div class="col-xs-12 col-sm-6 dash_block">
+      <div class="col-xs-12 dash_heading">Expected Order Fulfillment</div>
+      <div class="col-xs-12 dash_list">
+        <ul>
+          <li>
+            <span>56</span>
+            <span>Today</span>
+          </li>
+          <li>
+            <span>410</span>
+            <span>This Week</span>
+          </li>
+          <li>
+            <span>2,345</span>
+            <span>This Month</span>
+          </li>
+        </ul>
       </div>
-      <div class="col-md-4 col-sm-4 trilia-bg-color">
-          56<br>
-          Today
-       </div>
-       <div class="col-md-4 col-sm-4 trilia-bg-color">
-        410<br>
-          This Week
-       </div>
-       <div class="col-md-4 col-sm-4 trilia-bg-color">
-        2,345<br>
-        This Month
-       </div>
     </div>
   </div>
-</div>
 
-<div class="row" style="margin-top:10px;">
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
       <div class="dashboard-stat lGrey">
-          <div class="visual"></div>
           <div class="details">
               <div class="number"> 73 </div>
               <div class="desc"> Total numbers of customers</div>
@@ -47,7 +45,6 @@
   </div>
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
       <div class="dashboard-stat lGrey">
-          <div class="visual"></div>
           <div class="details">
               <div class="number"> 98 </div>
               <div class="desc"> Avg amt spend by customer </div>
@@ -56,7 +53,6 @@
   </div>
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
       <div class="dashboard-stat lGrey">
-          <div class="visual"></div>
           <div class="details">
               <div class="number"> 23% </div>
               <div class="desc"> Bounce rate </div>
@@ -65,34 +61,25 @@
   </div>
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
       <div class="dashboard-stat lGrey">
-          <div class="visual"></div>
           <div class="details">
               <div class="number"> 316 seconds </div>
               <div class="desc"> Avg time spend by customer </div>
           </div>
       </div>
   </div>
-</div>
 
-<div class="row" style="margin-top: 10px;">
-  <div class="col-md-12 col-sm-12">
+  <div class="col-md-12 col-xs-12 chart_title">
     <ng-high-line-chart></ng-high-line-chart>
   </div>
-</div>
 
-<div class="row" style="margin-top: 10px;">
-  <div class="col-md-6 col-sm-6">
+  <div class="col-md-6 col-sm-6 col-xs-12">
     <!-- BEGIN PORTLET-->
     <div class="portlet iGrey">
         <div class="portlet-body">
           <ng-high-donut-chart></ng-high-donut-chart>
         </div>
     </div>
-    
     <!-- END PORTLET-->
   </div>
-  
-  <div class="col-md-6 col-sm-6">
-    
-  </div>
+
 </div>

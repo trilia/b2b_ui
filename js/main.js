@@ -307,14 +307,32 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
           url: "/templates",
           templateUrl: "views/products/templates.html",
           data: {pageTitle: 'Templates'},
-          controller: "GeneralPageController",
+          controller: "TemplatePageController",
           resolve: {
             deps: ['$ocLazyLoad', function($ocLazyLoad) {
               return $ocLazyLoad.load({
                   name: 'TriliaApp',
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      'js/controllers/GeneralPageController.js'
+                      'js/controllers/TemplatePageController.js'
+                  ]
+              });
+            }]
+          }
+      })
+
+      .state("add-templates", {
+          url: "/add_templates",
+          templateUrl: "views/products/add_templates.html",
+          data: {pageTitle: 'Add Templates'},
+          controller: "TemplatePageController",
+          resolve: {
+            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+              return $ocLazyLoad.load({
+                  name: 'TriliaApp',
+                  insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                  files: [
+                      'js/controllers/TemplatePageController.js'
                   ]
               });
             }]

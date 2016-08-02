@@ -6,9 +6,6 @@
           <i class="fa fa-angle-right"></i>
       </li>
       <li>
-          <a href="#">Logistics Partners</a>
-      </li>
-      <li>
           <a href="#">Logistics Details</a>
       </li>
   </ul>
@@ -18,7 +15,7 @@
 <div class="clearfix"></div>
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-xs-12 Logistics_Details">
     <tabset>
       <tab ng-repeat="tab in ltabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled"><div ng-include="tab.template"></div></tab>
     </tabset>
