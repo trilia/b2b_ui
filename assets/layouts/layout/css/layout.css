@@ -790,8 +790,9 @@ Horizontal Menu
         text-align: left !important;
     }
     .btn-custom-7, .btn-custom-6, .btn-circle-but {
-        width: 100% !important;
-        margin: 0px 0px 15px 0px !important;
+        width: 48% !important;
+        margin: 0px 1% 15px 1% !important;
+        float: left;
     }
     [data-collection] select {
         margin-bottom: 15px;

@@ -11,6 +11,9 @@ table {
   tr:nth-of-type(odd) {
       background: #f4f7f9;
   }
+  #chart-view tr:nth-of-type(odd) {
+    background-color: inherit !important;
+  }
 }
 /* Zebra striping */
 th {
@@ -40,10 +43,12 @@ td, th {
   td {
     border: none;
     position: relative;
-    padding-left: 50%;
+    padding-left: 50% !important;
     font-size: 13px;
     background-color: #f4f7f9;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   td a {
     color: #00a6de;
