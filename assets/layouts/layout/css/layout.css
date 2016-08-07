@@ -177,7 +177,7 @@ Page Header
     margin-right: 15px;
 }
 .page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .menu-toggler.sidebar-toggler {
-    margin-right: 10.5px;
+    /*margin-right: 10.5px;*/
 }
 .page-header.navbar .menu-toggler.responsive-toggler {
     display: none;
@@ -981,6 +981,8 @@ Page sidebar
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
+    float: left;
+    width: 100%;
 }
 .page-sidebar .page-sidebar-menu> li> a> i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu> li> a> i {
     font-size: 16px;
@@ -1097,11 +1099,13 @@ Page sidebar
 .page-sidebar .page-sidebar-menu .sub-menu li> a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li> a {
     display: block;
     margin: 0;
-    padding: 12px 15px 12px 70px;
+    padding: 12px 15px 12px 55px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
     background: none;
+    float: left;
+    width: 100%;
 }
 .page-sidebar .page-sidebar-menu .sub-menu li> a> i, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li> a> i {
     font-size: 14px;
@@ -1258,11 +1262,11 @@ Page sidebar
     }
     /* Sidebar Closed */
     .page-sidebar-closed .page-sidebar {
-        width: 45px !important;
+        width: 58px !important;
     }
     .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed {
         /* sidebar */
-        width: 45px !important;
+        width: 58px !important;
         /* sidebar toggler */
         /* sidebar search */
         /* sidebar bordered search */
@@ -1309,7 +1313,7 @@ Page sidebar
         width: 210px;
         position: absolute;
         z-index: 2000;
-        left: 46px;
+        left: 59px;
         margin-top: 0;
         top: 100%;
         display: block !important;
@@ -1341,7 +1345,7 @@ Page sidebar
         width: 45px !important;
     }
     .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed> li> a {
-        padding-left: 11px;
+        /*padding-left: 11px;*/
     }
     .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed> li> a .selected {
         right: -3px !important;
@@ -1808,7 +1812,7 @@ Page content
         margin-right: 42px !important;
     }
     .page-sidebar-closed .page-content-wrapper .page-content {
-        margin-left: 42px !important;
+        margin-left: 59px !important;
     }
     .page-sidebar-closed.page-sidebar-hide .page-content-wrapper .page-content {
         margin-left: 0 !important;

@@ -448,8 +448,8 @@ Common Classes
 .page-sidebar .page-sidebar-menu > li > a > i.icon, .icon {
     color: #002246;
     width: 26px;
-    height: 26px;
-    margin-top: -4px;
+    height: 23px;
+    margin-top: -3px;
     float: left;
     background-image: url('../../images/spride.png');
     background-repeat: no-repeat;
@@ -895,7 +895,7 @@ Page Footer
         box-shadow: none;
     }
     .page-sidebar-menu.page-sidebar-menu-closed > li:hover {
-        box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+        /*box-shadow: 5px 5px rgba(44, 53, 66, 0.2);*/
     }
     .page-sidebar-menu.page-sidebar-menu-closed > li:hover.sidebar-toggler-wrapper,
     .page-sidebar-menu.page-sidebar-menu-closed > li:hover.sidebar-search-wrapper {
