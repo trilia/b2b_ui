@@ -79,7 +79,11 @@ div.orgChart div.node {
   bottom: -10px;
   left: -5px;
   padding-left: 13px;
-  background: url(./add.png) no-repeat 0 3px;
+  background: url(./add.png) no-repeat 2px 3px;
+  background-color: #fff;
+  border-radius: 50px !important;
+  width: 16px;
+  height: 16px;
 }
 
 .org-add-button:hover,
@@ -93,6 +97,7 @@ div.orgChart div.node {
   height: 12px;
   top: -7px;
   right: -6px;
+  background-color: #fff;
 }
 
 .org-input { width: 90px; }
