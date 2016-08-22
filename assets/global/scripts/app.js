@@ -109,7 +109,7 @@ var App = function() {
         });
 
         // handle portlet fullscreen
-        $('body').on('click', '.portlet > .portlet-title .fullscreen', function(e) {
+        $('body').on('slimScrollBar', '.portlet > .portlet-title .fullscreen', function(e) {
             e.preventDefault();
             var portlet = $(this).closest(".portlet");
             if (portlet.hasClass('portlet-fullscreen')) {
@@ -697,7 +697,7 @@ var App = function() {
 
                 $(this).slimScroll({
                     allowPageScroll: true, // allow page scroll when the element scroll is ended
-                    size: '7px',
+                    size: '5px',
                     color: ($(this).attr("data-handle-color") ? $(this).attr("data-handle-color") : '#bbb'),
                     wrapperClass: ($(this).attr("data-wrapper-class") ? $(this).attr("data-wrapper-class") : 'slimScrollDiv'),
                     railColor: ($(this).attr("data-rail-color") ? $(this).attr("data-rail-color") : '#eaeaea'),
@@ -1046,7 +1046,9 @@ jQuery(document).ready(function() {
    App.init(); // init Trilia core componets
    // menu
    $('body').on('click', '.sub-menu > li > a', function(e) {
+     $(".nav-item > a.nav-link").removeClass("deactive");
      $(".sub-menu > li > a").removeClass("active");
+     $(this).parents(".nav-item").children(".nav-link").addClass("deactive");
      $(this).toggleClass("active");
    });
 });

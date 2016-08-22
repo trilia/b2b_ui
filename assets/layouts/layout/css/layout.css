@@ -807,7 +807,7 @@ Horizontal Menu
         display: none;
     }
     .ng-isolate-scope .nav-tabs> li {
-        width: 50%;
+        width: 100%;
         margin-right: 0px !important;
     }
     .ng-isolate-scope .nav-tabs> li> a {
@@ -1088,12 +1088,16 @@ Page sidebar
     display: none;
     padding: 0px;
     margin: 0px;
+    float: left;
+    width: 100%;
 }
 .page-sidebar .page-sidebar-menu .sub-menu li, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li {
     background: none;
     margin: 0px;
     padding: 0px;
     margin-top: 1px !important;
+    float: left;
+    width: 100%;
     /* 2nd level sub menu */
 }
 .page-sidebar .page-sidebar-menu .sub-menu li> a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li> a {

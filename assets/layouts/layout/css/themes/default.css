@@ -419,9 +419,10 @@ Common Classes
 
 /* Page sidebar */
 
-.page-sidebar-menu,
-.page-sidebar-menu li.nav-item {
+.page-sidebar-menu, .page-sidebar-menu li.nav-item {
     background: #f6f6f6;
+    float: left;
+    width: 100%;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
@@ -442,6 +443,9 @@ Common Classes
     border-top: 1px solid #dddddd;
     color: #002246;
     font-weight: 400;
+}
+.page-sidebar .page-sidebar-menu > li.open > ul.sub-menu {
+  display: block;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > i,
@@ -536,7 +540,7 @@ i.bell {
 }
 .top_headding h3 { color: #081a47; font-weight: 600; font-size: 24px; }
 .top_headding h3 + label { color: #888888; font-size: 20px; font-weight: 400; }
-.customise { background: #f2f2f2; }
+.customise { background: #f2f2f2; float: none; width: auto !important; }
 .category_container > div { margin-bottom: 30px; }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
   .category_container > div {
@@ -571,6 +575,9 @@ i.bell {
 .page-sidebar .page-sidebar-menu > li.open > a {
     color: #00A6DE;
     background: #fff;
+}
+.nav-link.deactive {
+  background: #f6f6f6 !important;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a > i,
@@ -664,6 +671,7 @@ i.bell {
 
 .page-sidebar .page-sidebar-menu .sub-menu > li > a:hover, .page-sidebar .page-sidebar-menu .sub-menu > li > a:focus, .page-sidebar .page-sidebar-menu .sub-menu > li > a.active {
     background: #fff;
+    color: #00A6DE;
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li > a > i,
@@ -692,7 +700,7 @@ i.bell {
 .page-sidebar .page-sidebar-menu .sub-menu > li.open > a,
 .page-sidebar .page-sidebar-menu .sub-menu > li.active > a {
     /*background: #3e4b5c !important;*/
-    color: #00A6DE;
+    /*color: #00A6DE;*/
 }
 
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > i,
@@ -701,7 +709,6 @@ i.bell {
 .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > i,
 .page-sidebar .page-sidebar-menu .sub-menu > li.open > a > i,
 .page-sidebar .page-sidebar-menu .sub-menu > li.active > a > i {
-    color: #00A6DE;
     color: #00A6DE;
 }
 
