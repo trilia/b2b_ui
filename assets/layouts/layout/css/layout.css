@@ -1735,7 +1735,7 @@ Page content
     margin: 0px -20px 0 -20px;
 }
 .page-content-white .page-bar .page-breadcrumb, .page-container-bg-solid .page-bar .page-breadcrumb {
-    padding: 11px 0;
+    padding: 0px 0px 11px 0px;
 }
 .page-content-white .page-bar .page-breadcrumb> li> a, .page-content-white .page-bar .page-breadcrumb> li> span, .page-container-bg-solid .page-bar .page-breadcrumb> li> a, .page-container-bg-solid .page-bar .page-breadcrumb> li> span {
     color: #888;

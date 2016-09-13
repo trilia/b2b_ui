@@ -59,15 +59,15 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
 
     }];
 
-    $scope.loadForm = function(type) {
+    $scope.loadForm = function(type, value) {
       if(type == 'frmBankDetails') {
-        $scope.frmBankDetails = $scope.frmBankDetails == false ? true : false;
-      } else if(type == 'frmBillPlan') {
-        $scope.frmBillPlan = $scope.frmBillPlan == false ? true : false;
-      } else if(type == 'frmLegalInfo') {
-        $scope.frmLegalInfo = $scope.frmLegalInfo == false ? true : false;
-      } else if(type == 'frmBank') {
-        $scope.frmBank = $scope.frmBank == false ? true : false;
+        $scope.frmBankDetails = value;
+      } if(type == 'frmBillPlan') {
+        $scope.frmBillPlan = value;
+      } if(type == 'frmLegalInfo') {
+        $scope.frmLegalInfo = value;
+      } if(type == 'frmBank') {
+        $scope.frmBank = value;
       }
     }
 
