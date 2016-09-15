@@ -4,6 +4,16 @@ table {
 }
 [employee-responsive-table] a { text-decoration: underline; }
 [employee-responsive-table] div.checker { margin-right: 15px !important; }
+[employee-responsive-table] > tbody > tr > td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.add-roles-table > tbody > tr > td > a {
+  color: #000;
+  text-decoration: none !important;
+  font-size: 13px;
+}
 @media only screen and (max-width: 760px) {
   [employee-responsive-table] div.checker { margin-right: 5px !important; }
 }
