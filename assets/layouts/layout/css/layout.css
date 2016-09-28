@@ -913,8 +913,20 @@ Page container
     .page-footer-fixed .page-container {
         margin-bottom: 20px !important;
     }
+}
+@media (min-width: 1152px) {
     .ng-isolate-scope .nav-tabs> li {
         min-width: 190px;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:992px) {
+  .ng-isolate-scope .nav-tabs> li {
+      min-width: 175px;
+  }
+}
+@media (max-width: 768px) {
+    .ng-isolate-scope .nav-tabs> li {
+        width: 100%;
     }
 }
 @media (max-width: 991px) {
