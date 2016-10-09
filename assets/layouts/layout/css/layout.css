@@ -2973,11 +2973,15 @@ input, select, textarea {
 }
 .add-roles .tooltip-inner {
     max-width: none;
-    margin-left: 253px;
+    margin: auto;
+    background-color: #f5f5f5;
+    color: #000;
+    border: solid 1px #D3D1CD;
 }
 .add-roles .tooltip.bottom .tooltip-arrow {
-    left: 270px;
-    margin-left: none;
+    left: 15px;
+    margin-left: inherit;
+    border-bottom-color: #D3D1CD;
 }
 #orgChartContainer .node h2 {
     color: #262726;
@@ -3274,4 +3278,21 @@ ul[page-count] li:last-child {
   width: 100px;
   margin-bottom: 5px;
   padding: 2px 5px 2px 5px;
+}
+/* Add Rules Start */
+.addRolesContainer .add-roles-table .fa-angle-right, .addRolesContainer .add-roles-table .fa-angle-down {
+  margin-left: 15px;
+}
+.addRolesContainer .add-roles-table .icon-settings {
+  margin-left: 6px;
+  cursor: pointer;
+}
+.addRolesContainer .add-roles-table tbody {
+  border-bottom: solid 1px #D3D1CD;
+}
+.addRolesContainer .addPriviledge {
+  text-decoration: underline;
+}
+.cutollTip .tooltip {
+  left: 15px !important;
 }
