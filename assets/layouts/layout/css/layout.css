@@ -915,17 +915,17 @@ Page container
     }
 }
 @media (min-width: 1152px) {
-    .ng-isolate-scope .nav-tabs> li {
+    .ng-isolate-scope > .nav-tabs> li {
         min-width: 190px;
     }
 }
 @media only screen and (min-width:780px) and (max-width:992px) {
-  .ng-isolate-scope .nav-tabs> li {
+  .ng-isolate-scope > .nav-tabs> li {
       min-width: 175px;
   }
 }
 @media (max-width: 768px) {
-    .ng-isolate-scope .nav-tabs> li {
+    .ng-isolate-scope > .nav-tabs> li {
         width: 100%;
     }
 }
