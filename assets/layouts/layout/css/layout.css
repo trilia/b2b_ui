@@ -3101,14 +3101,18 @@ ul[page-count] li:last-child {
 }
 
 /* Data Overlay */
-
-[data-overlay] {
+[data-overlay="false"] {
+  display: none;
+}
+[data-overlay="true"] {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     z-index: 9;
+    cursor: pointer;
 }
 [data-overlay] .popcontainer {
   position: absolute;
@@ -3295,4 +3299,17 @@ ul[page-count] li:last-child {
 }
 .cutollTip .tooltip {
   left: 15px !important;
+}
+/* template Custome start*/
+.templateCustome {
+  position: absolute;
+  padding: 0px;
+  width: 80%;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  background-color: #fff;
+  display: none;
 }

@@ -57,7 +57,7 @@
     </div>
     <div class="col-md-7 col-xs-12">
         <button type="button" class="btn btn-custom-3 btn-lg"><i class="fa fa-trash"></i> Discard</button>
-        <button type="button" class="btn btn-custom-3 btn-lg" ng-click="showDetails = ! showDetails"><i class="fa fa-folder" aria-hidden="true"></i> Add Template From Repository</button>
+        <button type="button" class="btn btn-custom-3 btn-lg addTemplateRepo"><i class="fa fa-folder" aria-hidden="true"></i> Add Template From Repository</button>
         <!-- // -->
         <button type="button" class="btn btn-custom-4 btn-lg pull-right" popover="Print" popover-trigger="mouseenter"><i class="fa fa-print"></i></button>
         <button type="button" class="btn btn-custom-4 btn-lg pull-right" popover="Download" popover-trigger="mouseenter"><i class="fa fa-download"></i></button>
@@ -145,7 +145,8 @@
     </div>
 </div>
 <!-- // Popup  Start -->
-<div data-overlay class="col-xs-12" ng-show="showDetails">
+<div data-overlay="false"></div>
+<div class="col-xs-12 templateCustome">
   <div class="col-xs-12 popcontainer">
     <div class="popheading col-xs-12">
       <div class="col-sm-5 col-xs-12 nopadding">
