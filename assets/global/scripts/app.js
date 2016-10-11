@@ -339,6 +339,15 @@ var App = function() {
       });
     };
     //
+    // Addtemplate addcheckBox
+    var addcheckBox = function() {
+      $("body").off().on("click",".tabsetData .checkbox .checker", function(){
+        $(this).toggleClass("focus");
+        $(this).children("span").toggleClass("checked");
+        console.log(this);
+        //return false;
+      });
+    };
 
     // Handles Bootstrap confirmations
     var handleBootstrapConfirmation = function() {
@@ -407,6 +416,10 @@ var App = function() {
     var handleTooltips = function() {
         // global tooltips
         $('.tooltips').tooltip();
+        // $(document).click(function(e){
+        //     if(e.target.nodeName.toLowerCase() != '[tooltip-trigger="click"]')
+        //         $('.tooltip').hide();
+        // });
 
         // portlet tooltips
         $('.portlet > .portlet-title .fullscreen').tooltip({
@@ -623,7 +636,8 @@ var App = function() {
             handleUniform(); // hanfle custom radio & checkboxes
             handleiCheck(); // handles custom icheck radio and checkboxes
             handleBootstrapSwitch(); // handle bootstrap switch plugin
-            addTemplateRepo();
+            addTemplateRepo(); // Add template popup
+            addcheckBox(); // Add check Box
             handleScrollers(); // handles slim scrolling contents
             handleFancybox(); // handle fancy box
             handleSelect2(); // handle custom Select2 dropdowns
@@ -651,7 +665,8 @@ var App = function() {
             handleUniform(); // handles custom radio & checkboxes
             handleiCheck(); // handles custom icheck radio and checkboxes
             handleBootstrapSwitch(); // handle bootstrap switch plugin
-            addTemplateRepo();
+            addTemplateRepo(); // add template popup
+            addcheckBox(); // Add checkbox
             handleDropdownHover(); // handles dropdown hover
             handleScrollers(); // handles slim scrolling contents
             handleSelect2(); // handle custom Select2 dropdowns
