@@ -3313,3 +3313,6 @@ ul[page-count] li:last-child {
   background-color: #fff;
   display: none;
 }
+/* TEMPLATE PAGE START */
+.Custome_Template_Wrapper .page-title .fa { color: #666666; }
+.cu-button-box {}
