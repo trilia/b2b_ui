@@ -3315,4 +3315,14 @@ ul[page-count] li:last-child {
 }
 /* TEMPLATE PAGE START */
 .Custome_Template_Wrapper .page-title .fa { color: #666666; }
-.cu-button-box {}
+.Custome_Template_Wrapper .addTemplateBlock { border: solid 1px #aaaaaa; padding: 7.5px; margin: 0px 0px 30px 0px; }
+.templateRow, .addTemplateBlock .form-group { margin-left: -7.5px; margin-right: -7.5px; margin-bottom: 10px;}
+.addTemplateBlock .form-group div { padding-left: 7.5px; padding-right: 7.5px; }
+.templateRow::before { display: table; content: ''; }
+.templateRow > div { padding-left: 7.5px; padding-right: 7.5px; }
+.topLineBox { margin-bottom: 7.5px; margin-top: -5.5px; }
+.addTemplateBlock .checker { margin-left: 0px; }
+.TboxClose { position: absolute; right: 5px; top: 5px; width: 15px; height: 15px; line-height: 13px; }
+.AddImgBox { border: solid 1px #aaaaaa; height: 120px; float: left; width: 100%; position: relative; color: #666666; }
+addimg { position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; height: 55px; width: 90px; text-align: center; text-decoration: none; }
+addimg span { display: block; text-align: center; }

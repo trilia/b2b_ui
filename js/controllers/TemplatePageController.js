@@ -1,7 +1,7 @@
 
 // var TriliaApp = angular.module('TriliaApp', ['ngDialog']);
 /* Setup general page controller */
-angular.module('TriliaApp').controller('TemplatePageController', ['$rootScope', '$scope', 'settings', '$ocLazyLoad', '$compile', '$sce', '$location', 'ngDialog', function($rootScope, $scope, settings, $ocLazyLoad, $compile, $sce, $location, ngDialog) {
+angular.module('TriliaApp').controller('TemplatePageController', ['$rootScope', '$scope', 'settings', '$ocLazyLoad', '$compile', '$sce', '$location', function($rootScope, $scope, settings, $ocLazyLoad, $compile, $sce, $location) {
   $scope.setAuth(true);
   $scope.$on('$viewContentLoaded', function() {
     // initialize core components

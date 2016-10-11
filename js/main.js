@@ -314,8 +314,8 @@ TriliaApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
                   name: 'TriliaApp',
                   insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                   files: [
-                      'https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.1.5/ng-dialog.css',
-                      'http://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.2.13/js/ngDialog.js',
+                      // 'https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.1.5/ng-dialog.css',
+                      // 'http://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.2.13/js/ngDialog.js',
                       'js/controllers/TemplatePageController.js'
                   ]
               });
