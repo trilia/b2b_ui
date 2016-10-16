@@ -2968,6 +2968,9 @@ input, select, textarea {
     font-size: 14px !important;
     color: #FFFFFF;
 }
+.cutollTip .tooltip {
+  margin-top: 8px;
+}
 .popover.top> .arrow::after {
     border-top-color: #081a47 !important;
 }
@@ -3342,3 +3345,16 @@ addimg span { display: block; text-align: center; }
 .tabsetData p.Tcontent { color: #888888; padding-left: 20px; }
 .tabsetData p.Tcontent span { display: block; color: #222222; }
 .PlusTab { min-width: 50px !important; }
+/* Tolltip strat */
+.closeTolltip {
+  position:fixed; background-color: rgba(250, 250, 250, 0); left:0; top:0; width:100%; height: 100%;
+  display: none;
+}
+[toll-tip-close="false"] {
+   z-index:-100;
+   display: none;
+}
+[toll-tip-close="true"] {
+   z-index:1;
+   display: block;
+}

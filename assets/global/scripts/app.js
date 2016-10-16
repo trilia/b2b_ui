@@ -348,7 +348,16 @@ var App = function() {
         //return false;
       });
     };
-
+    // Addtemplate tolltipclose
+    var tolltipclose = function() {
+      $(".cutollTip").on("click", function(){
+        $(".closeTolltip").attr('toll-tip-close','true');
+      });
+      //
+      $(document).on("click","[toll-tip-close='true']", function(){
+        $(this).attr('toll-tip-close','false');
+      });
+    };
     // Handles Bootstrap confirmations
     var handleBootstrapConfirmation = function() {
         if (!$().confirmation) {
@@ -638,6 +647,7 @@ var App = function() {
             handleBootstrapSwitch(); // handle bootstrap switch plugin
             addTemplateRepo(); // Add template popup
             addcheckBox(); // Add check Box
+            tolltipclose(); // tooltip close
             handleScrollers(); // handles slim scrolling contents
             handleFancybox(); // handle fancy box
             handleSelect2(); // handle custom Select2 dropdowns
@@ -666,7 +676,8 @@ var App = function() {
             handleiCheck(); // handles custom icheck radio and checkboxes
             handleBootstrapSwitch(); // handle bootstrap switch plugin
             addTemplateRepo(); // add template popup
-            addcheckBox(); // Add checkbox
+            addcheckBox(); // Add
+            tolltipclose(); // tolltip close
             handleDropdownHover(); // handles dropdown hover
             handleScrollers(); // handles slim scrolling contents
             handleSelect2(); // handle custom Select2 dropdowns
