@@ -916,12 +916,13 @@ Page container
 }
 @media (min-width: 1152px) {
     .ng-isolate-scope > .nav-tabs> li {
-        min-width: 190px;
+        /*min-width: 190px;*/
+        min-width: 180px;
     }
 }
 @media only screen and (min-width:780px) and (max-width:992px) {
   .ng-isolate-scope > .nav-tabs> li {
-      min-width: 175px;
+      min-width: 165px;
   }
 }
 @media (max-width: 768px) {
@@ -1701,6 +1702,7 @@ Page content
     padding: 8px;
     margin: 0;
     list-style: none;
+    width: 100%;
 }
 .page-bar .page-breadcrumb> li {
     display: inline-block;
@@ -2764,16 +2766,17 @@ Page Loading
 .ng-isolate-scope .nav-tabs> li {
     margin-right: 5px;
     text-align: center;
+    min-width: 160px;
 }
 .btn-custom-3 {
     padding: 10px 16px;
 }
 .nav-tabs> li.active> a, .nav-tabs> li.active> a:focus, .nav-tabs> li.active> a:hover {
-    font-size: 14px!important;
+    font-size: 12px!important;
     color: #00a6de!important;
 }
 .nav-pills> li> a, .nav-tabs> li> a {
-    font-size: 14px!important;
+    font-size: 12px!important;
     color: #222222!important;
 }
 .productImages ul {
@@ -2985,6 +2988,11 @@ input, select, textarea {
     left: 15px;
     margin-left: inherit;
     border-bottom-color: #D3D1CD;
+}
+@media (max-width: 768px) {
+  .add-roles .tooltip.bottom .tooltip-arrow {
+    left: 52%;
+  }
 }
 #orgChartContainer .node h2 {
     color: #262726;
@@ -3303,6 +3311,14 @@ ul[page-count] li:last-child {
 .cutollTip .tooltip {
   left: 15px !important;
 }
+@media (max-width: 768px) {
+  .cutollTip .tooltip {
+    max-width: 300px;
+    left: 0 !important;
+    right: 0;
+    margin: auto;
+  }
+}
 /* template Custome start*/
 .templateCustome {
   position: absolute;
@@ -3346,6 +3362,9 @@ addimg span { display: block; text-align: center; }
 .tabsetData p.Tcontent span { display: block; color: #222222; }
 .PlusTab { min-width: 50px !important; }
 /* Tolltip strat */
+.cutollTip {
+  overflow: inherit !important;
+}
 .closeTolltip {
   position:fixed; background-color: rgba(250, 250, 250, 0); left:0; top:0; width:100%; height: 100%;
   display: none;
