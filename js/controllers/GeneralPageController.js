@@ -5,7 +5,6 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
     $scope.$on('$viewContentLoaded', function() {
     	// initialize core components
     	App.initAjax();
-
     	// set default layout mode
     	$rootScope.settings.layout.pageContentWhite = true;
       $rootScope.settings.layout.pageBodySolid = false;

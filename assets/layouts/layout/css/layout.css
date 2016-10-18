@@ -3310,6 +3310,8 @@ ul[page-count] li:last-child {
 }
 .cutollTip .tooltip {
   left: 15px !important;
+  opacity: 1 !important;
+  margin-top: 7px;
 }
 @media (max-width: 768px) {
   .cutollTip .tooltip {
@@ -3361,7 +3363,7 @@ addimg span { display: block; text-align: center; }
 .tabsetData p.Tcontent { color: #888888; padding-left: 20px; }
 .tabsetData p.Tcontent span { display: block; color: #222222; }
 .PlusTab { min-width: 50px !important; }
-/* Tolltip strat */
+/* Tolltip Start */
 .cutollTip {
   overflow: inherit !important;
 }
