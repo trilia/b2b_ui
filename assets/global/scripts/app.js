@@ -598,7 +598,6 @@ var App = function() {
             var height = 0;
             var mode = parent.attr('data-mode');
             var offset = parseInt(parent.attr('data-offset') ? parent.attr('data-offset') : 0);
-
             items.each(function() {
                 if ($(this).attr('data-height') == "height") {
                     $(this).css('height', '');
@@ -611,9 +610,7 @@ var App = function() {
                     height = height_;
                 }
             });
-
             height = height + offset;
-
             items.each(function() {
                 if ($(this).attr('data-height') == "height") {
                     $(this).css('height', height);
@@ -621,7 +618,6 @@ var App = function() {
                     $(this).css('min-height', height);
                 }
             });
-
             if(parent.attr('data-related')) {
                 $(parent.attr('data-related')).css('height', parent.height());
             }
@@ -1094,7 +1090,7 @@ var App = function() {
 jQuery(document).ready(function() {
    App.init(); // init Trilia core componets
    // menu
-   $('body').on('click', '.sub-menu > li > a', function(e) {
+   $(document).on('click', '.sub-menu > li > a', function(e) {
      $(".nav-item > a.nav-link").removeClass("deactive");
      $(".sub-menu > li > a").removeClass("active");
      $(this).parents(".nav-item").children(".nav-link").addClass("deactive");

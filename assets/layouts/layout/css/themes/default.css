@@ -669,7 +669,7 @@ i.bell {
     color: #002246;
 }
 
-.page-sidebar .page-sidebar-menu .sub-menu > li > a:hover, .page-sidebar .page-sidebar-menu .sub-menu > li > a:focus, .page-sidebar .page-sidebar-menu .sub-menu > li > a.active {
+.page-sidebar .page-sidebar-menu .sub-menu > li > a:hover, .page-sidebar .page-sidebar-menu .sub-menu > li > a.active {
     background: #fff;
     color: #00A6DE;
 }

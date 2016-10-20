@@ -18,6 +18,10 @@ table {
   [employee-responsive-table] div.checker { margin-right: 5px !important; }
 }
 @media only screen and (min-width: 761px) {
+  /*[employee-responsive-table] tr {
+      float: left;
+      width: 100%;
+  }*/
   tr:nth-of-type(odd) {
       background: #f4f7f9;
   }
