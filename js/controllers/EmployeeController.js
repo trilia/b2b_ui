@@ -6,8 +6,8 @@ angular.module('TriliaApp').controller('EmployeeController', ['$rootScope', '$sc
 
     // set default layout mode
     $rootScope.settings.layout.pageContentWhite = true;
-      $rootScope.settings.layout.pageBodySolid = false;
-      $rootScope.settings.layout.pageSidebarClosed = false;
+    $rootScope.settings.layout.pageBodySolid = true;
+    $rootScope.settings.layout.pageSidebarClosed = false;
   });
 
   $scope.load = function (path) {

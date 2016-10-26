@@ -129,6 +129,7 @@ TriliaApp.controller('HeaderController', ['$scope', function($scope) {
 TriliaApp.controller('SidebarController', ['$scope', function($scope) {
     $scope.$on('$includeContentLoaded', function() {
         Layout.initSidebar(); // init sidebar
+        // alert("0");
     });
 }]);
 

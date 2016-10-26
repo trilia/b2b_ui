@@ -7,7 +7,7 @@ angular.module('TriliaApp').controller('GeneralPageController', ['$rootScope', '
     	App.initAjax();
     	// set default layout mode
     	$rootScope.settings.layout.pageContentWhite = true;
-      $rootScope.settings.layout.pageBodySolid = false;
+      $rootScope.settings.layout.pageBodySolid = true;
       $rootScope.settings.layout.pageSidebarClosed = false;
     });
 

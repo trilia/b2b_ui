@@ -397,7 +397,7 @@ var Layout = function () {
         }
 
         // handle sidebar show/hide
-        $('body').on('click', '.sidebar-toggler', function (e) {
+        $(document).on('click', '.sidebar-toggler', function (e) {
             var sidebar = $('.page-sidebar');
             var sidebarMenu = $('.page-sidebar-menu');
             $(".sidebar-search", sidebar).removeClass("open");
